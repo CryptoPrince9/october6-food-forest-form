@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بوابة مراسلة الجهات المانحة الدولية — غابة طعام مدينة 6 أكتوبر</title>
+<style>
+
+@page {
+    size: A4 portrait;
+    margin: 12mm 14mm 12mm 14mm;
+}
+* {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+body {
+    font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    color: #1C2826;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 1.58;
+    font-size: 10.2pt;
+}
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+.avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.cover-banner {
+    background: linear-gradient(135deg, #0F2E1E 0%, #1B4332 55%, #2D6A4F 100%);
+    color: #FFFFFF;
+    padding: 22px 26px;
+    border-radius: 12px;
+    border-bottom: 5px solid #E9C46A;
+    margin-bottom: 16px;
+}
+.cover-banner .badge {
+    display: inline-block;
+    background: #E9C46A;
+    color: #0F2E1E;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 9.2pt;
+    margin-bottom: 8px;
+}
+.cover-banner h1 {
+    margin: 4px 0 8px 0;
+    font-size: 19.5pt;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+.cover-banner h2 {
+    margin: 0 0 10px 0;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #D8F3DC;
+}
+.cover-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 8.8pt;
+}
+.cover-meta div strong {
+    color: #E9C46A;
+    display: block;
+}
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0 16px 0;
+}
+.kpi-card {
+    background: #F4F9F5;
+    border: 1.5px solid #95D5B2;
+    border-right: 5px solid #1B4332;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+.kpi-card .num {
+    font-size: 15pt;
+    font-weight: 800;
+    color: #1B4332;
+}
+.kpi-card .lbl {
+    font-size: 8.6pt;
+    color: #2D6A4F;
+    font-weight: 700;
+}
+.kpi-card .sub {
+    font-size: 7.8pt;
+    color: #555;
+    margin-top: 2px;
+}
+h2.sec-title {
+    background: #1B4332;
+    color: #FFFFFF;
+    padding: 8px 14px;
+    border-radius: 7px;
+    border-right: 6px solid #E9C46A;
+    font-size: 13pt;
+    margin: 16px 0 10px 0;
+}
+h3.sub-title {
+    color: #1B4332;
+    border-bottom: 2px solid #95D5B2;
+    padding-bottom: 3px;
+    font-size: 11.2pt;
+    margin: 12px 0 6px 0;
+}
+table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 14px 0;
+    font-size: 8.8pt;
+}
+table.data-table th {
+    background: #1B4332;
+    color: #FFFFFF;
+    padding: 6px 8px;
+    border: 1px solid #1B4332;
+    font-weight: 700;
+    text-align: right;
+}
+table.data-table td {
+    padding: 5.5px 8px;
+    border: 1px solid #CBD5E1;
+    vertical-align: top;
+}
+table.data-table tr:nth-child(even) td {
+    background: #F8FAF9;
+}
+.highlight-box {
+    background: #EDF7F0;
+    border: 1.5px solid #52B788;
+    border-right: 6px solid #1B4332;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 10px 0;
+}
+.warn-box {
+    background: #FFFBEB;
+    border: 1.5px solid #F59E0B;
+    border-right: 6px solid #B45309;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 10px 0;
+}
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+}
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.map-card {
+    border: 1.5px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 8px;
+    background: #FAFDFB;
+}
+.map-card img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+.map-caption {
+    font-size: 8.4pt;
+    color: #1B4332;
+    font-weight: 700;
+    margin-top: 6px;
+    text-align: center;
+}
+.formula-box {
+    background: #0F2E1E;
+    color: #E9C46A;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-family: 'Cambria Math', 'Segoe UI', sans-serif;
+    text-align: center;
+    direction: ltr;
+    font-weight: 700;
+    font-size: 10.2pt;
+    margin: 8px 0;
+}
+.footer-bar {
+    margin-top: 14px;
+    padding-top: 6px;
+    border-top: 1.5px solid #95D5B2;
+    font-size: 8pt;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+.form-field {
+    border: 1.5px solid #94A3B8;
+    border-radius: 7px;
+    padding: 9px 12px;
+    margin-bottom: 9px;
+    background: #FFFFFF;
+}
+.form-field .q-title {
+    font-weight: 700;
+    color: #1B4332;
+    margin-bottom: 5px;
+    font-size: 9.6pt;
+}
+.req-star {
+    color: #DC2626;
+    font-weight: bold;
+}
+.check-item {
+    display: block;
+    margin: 3px 0;
+    font-size: 8.9pt;
+}
+.input-line {
+    border-bottom: 1px dashed #64748B;
+    height: 20px;
+    margin-top: 4px;
+}
+
+body {
+    max-width: 980px;
+    margin: 20px auto;
+    padding: 0 16px 40px 16px;
+    background: #F0F7F4;
+}
+</style>
+</head>
+<body>
+
+<div class="cover-banner" style="background: linear-gradient(135deg, #0F2E1E 0%, #1B4332 50%, #0B2545 100%);">
+    <span class="badge">ملف المنح والتمويل الدولي | International Permaculture & Regenerative Agriculture Grants</span>
+    <h1>دليل مراسلة المنظمات والمؤسسات الدولية المانحة لدعم غابة الطعام ومياواكي بمدينة 6 أكتوبر</h1>
+    <h2>يتضمن 10 خطابات تمويلية مخصصة (باللغتين الإنجليزية والعربية) وروابط إرسال فوري بضغطة زر واحدة</h2>
+    <div class="cover-meta">
+        <div><strong>إجمالي الجهات المانحة المستهدفة:</strong>10 منظمات وصناديق دولية وإقليمية في مصر والعالم</div>
+        <div><strong>نطاق التمويل المستهدف:</strong>$5,000 – $70,000 USD + شتلات حيوية + شهادات كربون</div>
+        <div><strong>البوابة الحية للمشروع (للممولين):</strong>https://cryptoprince9.github.io/october6-food-forest-form/</div>
+        <div><strong>لوحة الإرسال التفاعلية:</strong>https://cryptoprince9.github.io/october6-food-forest-form/outreach.html</div>
+    </div>
+</div>
+
+<h2 class="sec-title">أولاً: قائمة المنظمات الدولية والإقليمية المستهدفة لدعم وتمويل المشروع في مصر</h2>
+<table class="data-table">
+    <thead>
+        <tr>
+            <th style="width:28%;">المنظمة الدولية / الجهة المانحة</th>
+            <th style="width:24%;">البريد الإلكتروني الرسمي للمنح</th>
+            <th style="width:18%;">قيمة الدعم / المنحة</th>
+            <th style="width:30%;">محور التوافق مع غابة طعام 6 أكتوبر</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    <tr>
+        <td><strong>1. سفارة اليابان بالقاهرة — برنامج منح الدعم الشعبي لمشروعات أمن الإنسان (KUSANONE)</strong><br/><span style="font-size:8pt;color:#475569;">Embassy of Japan in Egypt — KUSANONE Grassroots Human Security Grant (GAGP)</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>gagp@ca.mofa.go.jp</strong></td>
+        <td><strong>$25,000 – $70,000 USD</strong></td>
+        <td>Japanese Miyawaki Afforestation Method, Community Education & Urban Environment in Egypt</td>
+    </tr>
+    
+    <tr>
+        <td><strong>2. برنامج المنح الصغيرة لمرفق البيئة العالمية (GEF SGP / UNDP Egypt)</strong><br/><span style="font-size:8pt;color:#475569;">UNDP Egypt — GEF Small Grants Programme (SGP)</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>registry.eg@undp.org</strong></td>
+        <td><strong>$25,000 – $50,000 USD</strong></td>
+        <td>Community-Based Landscape Resilience, Biodiversity, Land Degradation Neutrality & Climate Mitigation</td>
+    </tr>
+    
+    <tr>
+        <td><strong>3. مبادرة سيكم / الجمعية المصرية للزراعة الحيوية (EBDA) / اقتصاد المحبة (Economy of Love)</strong><br/><span style="font-size:8pt;color:#475569;">SEKEM Initiative / Egyptian Biodynamic Association (EBDA) / Economy of Love</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>info@ebda.earth, info@economyoflove.net, pr@sekem.com, cs@sekem.com</strong></td>
+        <td><strong>Carbon Credits + Biodynamic Inputs + Technical Partnership</strong></td>
+        <td>Biodynamic Desert Reclamation, Economy of Love Carbon Certification, Compost & Tree Seedlings in Egypt</td>
+    </tr>
+    
+    <tr>
+        <td><strong>4. منظمة الأغذية والزراعة للأمم المتحدة — المكتب الإقليمي للشرق الأدنى وشمال أفريقيا بالقاهرة (FAO-RNE)</strong><br/><span style="font-size:8pt;color:#475569;">FAO Regional Office for the Near East and North Africa (FAO-RNE Cairo)</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>FAO-RNE@fao.org</strong></td>
+        <td><strong>Technical Cooperation + FAO Green Cities Initiative Support</strong></td>
+        <td>Urban & Peri-Urban Forestry, FAO Green Cities Initiative, Dryland Agroforestry & Food Security</td>
+    </tr>
+    
+    <tr>
+        <td><strong>5. المركز الدولي للبحوث الزراعية في المناطق الجافة بالقاهرة (ICARDA) والمركز العالمي للحراجة الزراعية (ICRAF)</strong><br/><span style="font-size:8pt;color:#475569;">ICARDA Cairo & CIFOR-ICRAF (World Agroforestry — Drylands Program)</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>icarda@cgiar.org, ifpri-egypt@cgiar.org, icraf@cgiar.org</strong></td>
+        <td><strong>Dryland Tree Germplasm + Research Grant Partnership</strong></td>
+        <td>Arid Agroforestry Germplasm (Baobab, Sea Buckthorn, Carob, Moringa), Subsurface Water Productivity & Soil Restoration</td>
+    </tr>
+    
+    <tr>
+        <td><strong>6. جائزة Lush Spring Prize العالمية للمشروعات التجديدية وجائزة مجلة البرماكالتشر</strong><br/><span style="font-size:8pt;color:#475569;">Lush Spring Prize & Permaculture Magazine Award</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>lushspringprize@gmail.com, anna@ethicalconsumer.org, francesca@ethicalconsumer.org</strong></td>
+        <td><strong>£10,000 – £25,000 GBP</strong></td>
+        <td>Intentional & Young Permaculture Projects, Social & Ecological Regeneration</td>
+    </tr>
+    
+    <tr>
+        <td><strong>7. منظمة One Tree Planted العالمية للتشجير المجتمعي والحضري</strong><br/><span style="font-size:8pt;color:#475569;">One Tree Planted — Global Urban & Community Reforestation</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>hello@onetreeplanted.org</strong></td>
+        <td><strong>$10,000 – $50,000 USD (Tree Planting Grant)</strong></td>
+        <td>Urban Forestry, Food Forests, Heat Island Mitigation & Community Tree Planting</td>
+    </tr>
+    
+    <tr>
+        <td><strong>8. صندوق Global Greengrants Fund وصندوق الزراعة الإيكولوجية (Agroecology Fund)</strong><br/><span style="font-size:8pt;color:#475569;">Global Greengrants Fund & Agroecology Fund</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>info@greengrants.org, contact@agroecologyfund.org, daniel@agroecologyfund.org</strong></td>
+        <td><strong>$5,000 – $25,000 USD</strong></td>
+        <td>Grassroots Food Sovereignty, Dryland Agroecology & Community Climate Action</td>
+    </tr>
+    
+    <tr>
+        <td><strong>9. الوكالة الألمانية للتعاون الدولي (GIZ Egypt) وبرنامج المدن الخضراء (6th of October GCAP)</strong><br/><span style="font-size:8pt;color:#475569;">GIZ Egypt & EBRD Green Cities (6th of October GCAP Alignment)</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>giz-aegypten@giz.de, info@giz.de</strong></td>
+        <td><strong>Technical & Infrastructure Co-Financing</strong></td>
+        <td>Green Urban Infrastructure, Stormwater Sponge City Solutions & Climate Adaptation in Egypt</td>
+    </tr>
+    
+    <tr>
+        <td><strong>10. مؤسسة ساويرس للتنمية الاجتماعية وبرامج المسؤولية المجتمعية الخضراء بمصر</strong><br/><span style="font-size:8pt;color:#475569;">Sawiris Foundation for Social Development & Egyptian Green CSR Partners</span></td>
+        <td style="direction:ltr;font-family:monospace;font-size:8.2pt;color:#0F2E1E;"><strong>info@sawirisfoundation.org</strong></td>
+        <td><strong>250,000 – 1,000,000 EGP (CSR / Community Development Grant)</strong></td>
+        <td>Community Food Security, Green Jobs, Environmental Education & Presidential 100 Million Trees Initiative</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+<div class="page-break"></div>
+<h2 class="sec-title">ثانياً: نصوص الرسائل التمويلية المخصصة والجاهزة للإرسال الفوري (1-Click Dispatch)</h2>
+
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">1. سفارة اليابان بالقاهرة — برنامج منح الدعم الشعبي لمشروعات أمن الإنسان (KUSANONE)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">Embassy of Japan in Egypt — KUSANONE Grassroots Human Security Grant (GAGP) | قيمة المنحة/الدعم: $25,000 – $70,000 USD</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                gagp@ca.mofa.go.jp
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Grant Inquiry (KUSANONE / GAGP): Community Miyawaki Urban Forest & Permaculture Food Forest in 6th of October City, Giza</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear KUSANONE (Grant Assistance for Grassroots Human Security Projects) Coordinator,
+Embassy of Japan in Egypt,
+
+Greetings from the Founding Community Committee of the 6th of October City Permaculture & Miyawaki Food Forest Initiative (Giza Governorate, Egypt).
+
+We are writing to inquire about submitting a grassroots project proposal under Japan's KUSANONE (GAGP) program for our community-led ecological and food-security project located on a 14,906 m² (3.55-feddan) public site in 6th of October City (GPS: 29.9535736° N, 30.9217508° E, directly north of El Maamon Center).
+
+Inspired directly by the pioneering ecological restoration methodology of Japanese botanist Professor Akira Miyawaki, our project integrates:
+1. A 3,200 m² Ultra-Dense Miyawaki Native Perimeter Forest (9,600 native drought-hardy seedlings at 3 trees/m²) to combat urban heat islands (-4.5°C cooling) and desert dust storms.
+2. A 7,450 m² 7-Layer Syntropic Food Forest & Self-Improving Bio-Irrigation System combining Olive, Fig, Pomegranate, Date Palm, Carob, Moringa, Seed-Grown Baobab (Adansonia digitata), and Sea Buckthorn (Hippophae rhamnoides) with subsurface clay pot (Olla) irrigation (-78% water consumption) and Keyline rainwater-harvesting swales (828 m³ stormwater capacity).
+3. An Open-Air Green Classroom serving surrounding nurseries (Little Bloom, Joyland) and Zahra Educational Academy, plus 12.8 tons/year of free organic fruits and superfoods for local families and Jana Al Janatain Charity Association.
+
+Full satellite feasibility study, engineering drawings, and community participation form:
+• Live Project Portal & Community Survey: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Engineering & Feasibility Portfolio (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+We would be deeply grateful for your guidance on the current KUSANONE application cycle and the opportunity to share our full bilingual dossier.
+
+With highest regards,
+Founding Community Committee — 6th of October City Miyawaki & Food Forest Initiative
+Location: 4th/5th District Border, North of El Maamon Mall, 6th of October City, Giza, Egypt
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gagp@ca.mofa.go.jp&su=Grant%20Inquiry%20%28KUSANONE%20/%20GAGP%29%3A%20Community%20Miyawaki%20Urban%20Forest%20%26%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Giza&body=Dear%20KUSANONE%20%28Grant%20Assistance%20for%20Grassroots%20Human%20Security%20Projects%29%20Coordinator%2C%0AEmbassy%20of%20Japan%20in%20Egypt%2C%0A%0AGreetings%20from%20the%20Founding%20Community%20Committee%20of%20the%206th%20of%20October%20City%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20Initiative%20%28Giza%20Governorate%2C%20Egypt%29.%0A%0AWe%20are%20writing%20to%20inquire%20about%20submitting%20a%20grassroots%20project%20proposal%20under%20Japan%27s%20KUSANONE%20%28GAGP%29%20program%20for%20our%20community-led%20ecological%20and%20food-security%20project%20located%20on%20a%2014%2C906%20m%C2%B2%20%283.55-feddan%29%20public%20site%20in%206th%20of%20October%20City%20%28GPS%3A%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%2C%20directly%20north%20of%20El%20Maamon%20Center%29.%0A%0AInspired%20directly%20by%20the%20pioneering%20ecological%20restoration%20methodology%20of%20Japanese%20botanist%20Professor%20Akira%20Miyawaki%2C%20our%20project%20integrates%3A%0A1.%20A%203%2C200%20m%C2%B2%20Ultra-Dense%20Miyawaki%20Native%20Perimeter%20Forest%20%289%2C600%20native%20drought-hardy%20seedlings%20at%203%20trees/m%C2%B2%29%20to%20combat%20urban%20heat%20islands%20%28-4.5%C2%B0C%20cooling%29%20and%20desert%20dust%20storms.%0A2.%20A%207%2C450%20m%C2%B2%207-Layer%20Syntropic%20Food%20Forest%20%26%20Self-Improving%20Bio-Irrigation%20System%20combining%20Olive%2C%20Fig%2C%20Pomegranate%2C%20Date%20Palm%2C%20Carob%2C%20Moringa%2C%20Seed-Grown%20Baobab%20%28Adansonia%20digitata%29%2C%20and%20Sea%20Buckthorn%20%28Hippophae%20rhamnoides%29%20with%20subsurface%20clay%20pot%20%28Olla%29%20irrigation%20%28-78%25%20water%20consumption%29%20and%20Keyline%20rainwater-harvesting%20swales%20%28828%20m%C2%B3%20stormwater%20capacity%29.%0A3.%20An%20Open-Air%20Green%20Classroom%20serving%20surrounding%20nurseries%20%28Little%20Bloom%2C%20Joyland%29%20and%20Zahra%20Educational%20Academy%2C%20plus%2012.8%20tons/year%20of%20free%20organic%20fruits%20and%20superfoods%20for%20local%20families%20and%20Jana%20Al%20Janatain%20Charity%20Association.%0A%0AFull%20satellite%20feasibility%20study%2C%20engineering%20drawings%2C%20and%20community%20participation%20form%3A%0A%E2%80%A2%20Live%20Project%20Portal%20%26%20Community%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Engineering%20%26%20Feasibility%20Portfolio%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20would%20be%20deeply%20grateful%20for%20your%20guidance%20on%20the%20current%20KUSANONE%20application%20cycle%20and%20the%20opportunity%20to%20share%20our%20full%20bilingual%20dossier.%0A%0AWith%20highest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Miyawaki%20%26%20Food%20Forest%20Initiative%0ALocation%3A%204th/5th%20District%20Border%2C%20North%20of%20El%20Maamon%20Mall%2C%206th%20of%20October%20City%2C%20Giza%2C%20Egypt%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:gagp@ca.mofa.go.jp?subject=Grant%20Inquiry%20%28KUSANONE%20/%20GAGP%29%3A%20Community%20Miyawaki%20Urban%20Forest%20%26%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Giza&body=Dear%20KUSANONE%20%28Grant%20Assistance%20for%20Grassroots%20Human%20Security%20Projects%29%20Coordinator%2C%0AEmbassy%20of%20Japan%20in%20Egypt%2C%0A%0AGreetings%20from%20the%20Founding%20Community%20Committee%20of%20the%206th%20of%20October%20City%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20Initiative%20%28Giza%20Governorate%2C%20Egypt%29.%0A%0AWe%20are%20writing%20to%20inquire%20about%20submitting%20a%20grassroots%20project%20proposal%20under%20Japan%27s%20KUSANONE%20%28GAGP%29%20program%20for%20our%20community-led%20ecological%20and%20food-security%20project%20located%20on%20a%2014%2C906%20m%C2%B2%20%283.55-feddan%29%20public%20site%20in%206th%20of%20October%20City%20%28GPS%3A%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%2C%20directly%20north%20of%20El%20Maamon%20Center%29.%0A%0AInspired%20directly%20by%20the%20pioneering%20ecological%20restoration%20methodology%20of%20Japanese%20botanist%20Professor%20Akira%20Miyawaki%2C%20our%20project%20integrates%3A%0A1.%20A%203%2C200%20m%C2%B2%20Ultra-Dense%20Miyawaki%20Native%20Perimeter%20Forest%20%289%2C600%20native%20drought-hardy%20seedlings%20at%203%20trees/m%C2%B2%29%20to%20combat%20urban%20heat%20islands%20%28-4.5%C2%B0C%20cooling%29%20and%20desert%20dust%20storms.%0A2.%20A%207%2C450%20m%C2%B2%207-Layer%20Syntropic%20Food%20Forest%20%26%20Self-Improving%20Bio-Irrigation%20System%20combining%20Olive%2C%20Fig%2C%20Pomegranate%2C%20Date%20Palm%2C%20Carob%2C%20Moringa%2C%20Seed-Grown%20Baobab%20%28Adansonia%20digitata%29%2C%20and%20Sea%20Buckthorn%20%28Hippophae%20rhamnoides%29%20with%20subsurface%20clay%20pot%20%28Olla%29%20irrigation%20%28-78%25%20water%20consumption%29%20and%20Keyline%20rainwater-harvesting%20swales%20%28828%20m%C2%B3%20stormwater%20capacity%29.%0A3.%20An%20Open-Air%20Green%20Classroom%20serving%20surrounding%20nurseries%20%28Little%20Bloom%2C%20Joyland%29%20and%20Zahra%20Educational%20Academy%2C%20plus%2012.8%20tons/year%20of%20free%20organic%20fruits%20and%20superfoods%20for%20local%20families%20and%20Jana%20Al%20Janatain%20Charity%20Association.%0A%0AFull%20satellite%20feasibility%20study%2C%20engineering%20drawings%2C%20and%20community%20participation%20form%3A%0A%E2%80%A2%20Live%20Project%20Portal%20%26%20Community%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Engineering%20%26%20Feasibility%20Portfolio%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20would%20be%20deeply%20grateful%20for%20your%20guidance%20on%20the%20current%20KUSANONE%20application%20cycle%20and%20the%20opportunity%20to%20share%20our%20full%20bilingual%20dossier.%0A%0AWith%20highest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Miyawaki%20%26%20Food%20Forest%20Initiative%0ALocation%3A%204th/5th%20District%20Border%2C%20North%20of%20El%20Maamon%20Mall%2C%206th%20of%20October%20City%2C%20Giza%2C%20Egypt%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">2. برنامج المنح الصغيرة لمرفق البيئة العالمية (GEF SGP / UNDP Egypt)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">UNDP Egypt — GEF Small Grants Programme (SGP) | قيمة المنحة/الدعم: $25,000 – $50,000 USD</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                registry.eg@undp.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: GEF Small Grants Programme (SGP Egypt) Inquiry: 3.55-Feddan Regenerative Food Forest & Miyawaki Carbon Sink in 6th of October City</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear GEF Small Grants Programme (SGP) National Coordinator & UNDP Egypt Environment Team,
+
+We are writing on behalf of the 6th of October City Community Permaculture & Miyawaki Food Forest Initiative (in partnership with local civil society including Jana Al Janatain Charity Association) to request information on applying for GEF Small Grants Programme support in Egypt.
+
+Our project transforms 14,906 m² (3.55 feddans) of degraded calcareous desert land in 6th of October City (29.9535736° N, 30.9217508° E) into a model zero-waste urban agroforestry ecosystem aligned with Egypt Vision 2030, the Presidential "100 Million Trees" Initiative, and 6th of October City's Green City Action Plan (GCAP):
+• Climate Mitigation & Biodiversity: Planting 10,500 native and drought-adapted multipurpose trees/shrubs sequestering ~41 metric tons of CO₂/year and raising Sentinel-2 NDVI from 0.09 to 0.76.
+• Land Degradation Neutrality & Bio-Irrigation: Remediating alkaline calcareous soil (pH 8.0, SOC 0.45%) using locally produced biochar, market organic waste Bokashi composting, Frankia nitrogen-fixing Sea Buckthorn (60–180 kg N/ha/yr + nocturnal hydraulic lift), and seed-grown Baobab biological subsoiling.
+• Non-Conventional Water Harvesting: Capturing 4,230 m³/year of street flash-flood runoff in 3 Keyline contour swales, AC condensate, and bio-filtered greywater delivered via buried porous clay Ollas (-78% water use).
+
+Project Links & Full Technical Study:
+• Live Portal & Community Survey: https://cryptoprince9.github.io/october6-food-forest-form/
+• Complete Feasibility Study & Master Plan (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+We welcome the opportunity to submit a concept note for the upcoming GEF SGP call in Egypt.
+
+Sincerely,
+Founding Community Committee — 6th of October City Permaculture Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=registry.eg@undp.org&su=GEF%20Small%20Grants%20Programme%20%28SGP%20Egypt%29%20Inquiry%3A%203.55-Feddan%20Regenerative%20Food%20Forest%20%26%20Miyawaki%20Carbon%20Sink%20in%206th%20of%20October%20City&body=Dear%20GEF%20Small%20Grants%20Programme%20%28SGP%29%20National%20Coordinator%20%26%20UNDP%20Egypt%20Environment%20Team%2C%0A%0AWe%20are%20writing%20on%20behalf%20of%20the%206th%20of%20October%20City%20Community%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20Initiative%20%28in%20partnership%20with%20local%20civil%20society%20including%20Jana%20Al%20Janatain%20Charity%20Association%29%20to%20request%20information%20on%20applying%20for%20GEF%20Small%20Grants%20Programme%20support%20in%20Egypt.%0A%0AOur%20project%20transforms%2014%2C906%20m%C2%B2%20%283.55%20feddans%29%20of%20degraded%20calcareous%20desert%20land%20in%206th%20of%20October%20City%20%2829.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%20into%20a%20model%20zero-waste%20urban%20agroforestry%20ecosystem%20aligned%20with%20Egypt%20Vision%202030%2C%20the%20Presidential%20%22100%20Million%20Trees%22%20Initiative%2C%20and%206th%20of%20October%20City%27s%20Green%20City%20Action%20Plan%20%28GCAP%29%3A%0A%E2%80%A2%20Climate%20Mitigation%20%26%20Biodiversity%3A%20Planting%2010%2C500%20native%20and%20drought-adapted%20multipurpose%20trees/shrubs%20sequestering%20~41%20metric%20tons%20of%20CO%E2%82%82/year%20and%20raising%20Sentinel-2%20NDVI%20from%200.09%20to%200.76.%0A%E2%80%A2%20Land%20Degradation%20Neutrality%20%26%20Bio-Irrigation%3A%20Remediating%20alkaline%20calcareous%20soil%20%28pH%208.0%2C%20SOC%200.45%25%29%20using%20locally%20produced%20biochar%2C%20market%20organic%20waste%20Bokashi%20composting%2C%20Frankia%20nitrogen-fixing%20Sea%20Buckthorn%20%2860%E2%80%93180%20kg%20N/ha/yr%20%2B%20nocturnal%20hydraulic%20lift%29%2C%20and%20seed-grown%20Baobab%20biological%20subsoiling.%0A%E2%80%A2%20Non-Conventional%20Water%20Harvesting%3A%20Capturing%204%2C230%20m%C2%B3/year%20of%20street%20flash-flood%20runoff%20in%203%20Keyline%20contour%20swales%2C%20AC%20condensate%2C%20and%20bio-filtered%20greywater%20delivered%20via%20buried%20porous%20clay%20Ollas%20%28-78%25%20water%20use%29.%0A%0AProject%20Links%20%26%20Full%20Technical%20Study%3A%0A%E2%80%A2%20Live%20Portal%20%26%20Community%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Complete%20Feasibility%20Study%20%26%20Master%20Plan%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20welcome%20the%20opportunity%20to%20submit%20a%20concept%20note%20for%20the%20upcoming%20GEF%20SGP%20call%20in%20Egypt.%0A%0ASincerely%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Permaculture%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:registry.eg@undp.org?subject=GEF%20Small%20Grants%20Programme%20%28SGP%20Egypt%29%20Inquiry%3A%203.55-Feddan%20Regenerative%20Food%20Forest%20%26%20Miyawaki%20Carbon%20Sink%20in%206th%20of%20October%20City&body=Dear%20GEF%20Small%20Grants%20Programme%20%28SGP%29%20National%20Coordinator%20%26%20UNDP%20Egypt%20Environment%20Team%2C%0A%0AWe%20are%20writing%20on%20behalf%20of%20the%206th%20of%20October%20City%20Community%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20Initiative%20%28in%20partnership%20with%20local%20civil%20society%20including%20Jana%20Al%20Janatain%20Charity%20Association%29%20to%20request%20information%20on%20applying%20for%20GEF%20Small%20Grants%20Programme%20support%20in%20Egypt.%0A%0AOur%20project%20transforms%2014%2C906%20m%C2%B2%20%283.55%20feddans%29%20of%20degraded%20calcareous%20desert%20land%20in%206th%20of%20October%20City%20%2829.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%20into%20a%20model%20zero-waste%20urban%20agroforestry%20ecosystem%20aligned%20with%20Egypt%20Vision%202030%2C%20the%20Presidential%20%22100%20Million%20Trees%22%20Initiative%2C%20and%206th%20of%20October%20City%27s%20Green%20City%20Action%20Plan%20%28GCAP%29%3A%0A%E2%80%A2%20Climate%20Mitigation%20%26%20Biodiversity%3A%20Planting%2010%2C500%20native%20and%20drought-adapted%20multipurpose%20trees/shrubs%20sequestering%20~41%20metric%20tons%20of%20CO%E2%82%82/year%20and%20raising%20Sentinel-2%20NDVI%20from%200.09%20to%200.76.%0A%E2%80%A2%20Land%20Degradation%20Neutrality%20%26%20Bio-Irrigation%3A%20Remediating%20alkaline%20calcareous%20soil%20%28pH%208.0%2C%20SOC%200.45%25%29%20using%20locally%20produced%20biochar%2C%20market%20organic%20waste%20Bokashi%20composting%2C%20Frankia%20nitrogen-fixing%20Sea%20Buckthorn%20%2860%E2%80%93180%20kg%20N/ha/yr%20%2B%20nocturnal%20hydraulic%20lift%29%2C%20and%20seed-grown%20Baobab%20biological%20subsoiling.%0A%E2%80%A2%20Non-Conventional%20Water%20Harvesting%3A%20Capturing%204%2C230%20m%C2%B3/year%20of%20street%20flash-flood%20runoff%20in%203%20Keyline%20contour%20swales%2C%20AC%20condensate%2C%20and%20bio-filtered%20greywater%20delivered%20via%20buried%20porous%20clay%20Ollas%20%28-78%25%20water%20use%29.%0A%0AProject%20Links%20%26%20Full%20Technical%20Study%3A%0A%E2%80%A2%20Live%20Portal%20%26%20Community%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Complete%20Feasibility%20Study%20%26%20Master%20Plan%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20welcome%20the%20opportunity%20to%20submit%20a%20concept%20note%20for%20the%20upcoming%20GEF%20SGP%20call%20in%20Egypt.%0A%0ASincerely%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Permaculture%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">3. مبادرة سيكم / الجمعية المصرية للزراعة الحيوية (EBDA) / اقتصاد المحبة (Economy of Love)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">SEKEM Initiative / Egyptian Biodynamic Association (EBDA) / Economy of Love | قيمة المنحة/الدعم: Carbon Credits + Biodynamic Inputs + Technical Partnership</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                info@ebda.earth, info@economyoflove.net, pr@sekem.com, cs@sekem.com
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Partnership & Economy of Love Certification Request: 3.55-Feddan Community Permaculture Food Forest in 6th of October City</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear SEKEM Initiative, Egyptian Biodynamic Association (EBDA), and Economy of Love (EoL) Teams,
+
+Inspired by SEKEM's 45+ years of pioneering desert greening and biodynamic agriculture in Egypt, we are reaching out to propose a technical, seedling, and carbon-credit partnership for the 6th of October City Community Permaculture & Miyawaki Food Forest (14,906 m² / 3.55 feddans at 29.9535736° N, 30.9217508° E).
+
+Our community initiative applies zero-chemical regenerative agroforestry:
+• 10,500 multipurpose trees and shrubs across 7 vertical layers (Date Palm, Olive, Fig, Pomegranate, Carob, Moringa, Sidr, Baobab, and Sea Buckthorn).
+• Closed-loop thermophilic composting, biochar inoculation, and mycorrhizal soil food web restoration recycling daily organic produce trimmings from adjacent markets (El Maamon Center).
+• Projected carbon sequestration of 41 tons CO₂/year in biomass and soil organic carbon (raising SOM from 0.45% to >4.2%).
+
+We would love to collaborate with EBDA and Economy of Love on:
+1. Registering the project under the Economy of Love (EoL) Carbon & Social Impact certification standard.
+2. Sourcing biodynamic inoculants, compost starters, and native/arid tree seedlings.
+3. Hosting joint educational workshops for residents and local school children.
+
+Full Arabic Feasibility Study & Master Plan:
+• Live Project Hub: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full PDF Study: https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+Warmest regards,
+Founding Community Committee — 6th of October City Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ebda.earth,info@economyoflove.net,pr@sekem.com,cs@sekem.com&su=Partnership%20%26%20Economy%20of%20Love%20Certification%20Request%3A%203.55-Feddan%20Community%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City&body=Dear%20SEKEM%20Initiative%2C%20Egyptian%20Biodynamic%20Association%20%28EBDA%29%2C%20and%20Economy%20of%20Love%20%28EoL%29%20Teams%2C%0A%0AInspired%20by%20SEKEM%27s%2045%2B%20years%20of%20pioneering%20desert%20greening%20and%20biodynamic%20agriculture%20in%20Egypt%2C%20we%20are%20reaching%20out%20to%20propose%20a%20technical%2C%20seedling%2C%20and%20carbon-credit%20partnership%20for%20the%206th%20of%20October%20City%20Community%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20community%20initiative%20applies%20zero-chemical%20regenerative%20agroforestry%3A%0A%E2%80%A2%2010%2C500%20multipurpose%20trees%20and%20shrubs%20across%207%20vertical%20layers%20%28Date%20Palm%2C%20Olive%2C%20Fig%2C%20Pomegranate%2C%20Carob%2C%20Moringa%2C%20Sidr%2C%20Baobab%2C%20and%20Sea%20Buckthorn%29.%0A%E2%80%A2%20Closed-loop%20thermophilic%20composting%2C%20biochar%20inoculation%2C%20and%20mycorrhizal%20soil%20food%20web%20restoration%20recycling%20daily%20organic%20produce%20trimmings%20from%20adjacent%20markets%20%28El%20Maamon%20Center%29.%0A%E2%80%A2%20Projected%20carbon%20sequestration%20of%2041%20tons%20CO%E2%82%82/year%20in%20biomass%20and%20soil%20organic%20carbon%20%28raising%20SOM%20from%200.45%25%20to%20%3E4.2%25%29.%0A%0AWe%20would%20love%20to%20collaborate%20with%20EBDA%20and%20Economy%20of%20Love%20on%3A%0A1.%20Registering%20the%20project%20under%20the%20Economy%20of%20Love%20%28EoL%29%20Carbon%20%26%20Social%20Impact%20certification%20standard.%0A2.%20Sourcing%20biodynamic%20inoculants%2C%20compost%20starters%2C%20and%20native/arid%20tree%20seedlings.%0A3.%20Hosting%20joint%20educational%20workshops%20for%20residents%20and%20local%20school%20children.%0A%0AFull%20Arabic%20Feasibility%20Study%20%26%20Master%20Plan%3A%0A%E2%80%A2%20Live%20Project%20Hub%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20PDF%20Study%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWarmest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:info@ebda.earth,info@economyoflove.net,pr@sekem.com,cs@sekem.com?subject=Partnership%20%26%20Economy%20of%20Love%20Certification%20Request%3A%203.55-Feddan%20Community%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City&body=Dear%20SEKEM%20Initiative%2C%20Egyptian%20Biodynamic%20Association%20%28EBDA%29%2C%20and%20Economy%20of%20Love%20%28EoL%29%20Teams%2C%0A%0AInspired%20by%20SEKEM%27s%2045%2B%20years%20of%20pioneering%20desert%20greening%20and%20biodynamic%20agriculture%20in%20Egypt%2C%20we%20are%20reaching%20out%20to%20propose%20a%20technical%2C%20seedling%2C%20and%20carbon-credit%20partnership%20for%20the%206th%20of%20October%20City%20Community%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20community%20initiative%20applies%20zero-chemical%20regenerative%20agroforestry%3A%0A%E2%80%A2%2010%2C500%20multipurpose%20trees%20and%20shrubs%20across%207%20vertical%20layers%20%28Date%20Palm%2C%20Olive%2C%20Fig%2C%20Pomegranate%2C%20Carob%2C%20Moringa%2C%20Sidr%2C%20Baobab%2C%20and%20Sea%20Buckthorn%29.%0A%E2%80%A2%20Closed-loop%20thermophilic%20composting%2C%20biochar%20inoculation%2C%20and%20mycorrhizal%20soil%20food%20web%20restoration%20recycling%20daily%20organic%20produce%20trimmings%20from%20adjacent%20markets%20%28El%20Maamon%20Center%29.%0A%E2%80%A2%20Projected%20carbon%20sequestration%20of%2041%20tons%20CO%E2%82%82/year%20in%20biomass%20and%20soil%20organic%20carbon%20%28raising%20SOM%20from%200.45%25%20to%20%3E4.2%25%29.%0A%0AWe%20would%20love%20to%20collaborate%20with%20EBDA%20and%20Economy%20of%20Love%20on%3A%0A1.%20Registering%20the%20project%20under%20the%20Economy%20of%20Love%20%28EoL%29%20Carbon%20%26%20Social%20Impact%20certification%20standard.%0A2.%20Sourcing%20biodynamic%20inoculants%2C%20compost%20starters%2C%20and%20native/arid%20tree%20seedlings.%0A3.%20Hosting%20joint%20educational%20workshops%20for%20residents%20and%20local%20school%20children.%0A%0AFull%20Arabic%20Feasibility%20Study%20%26%20Master%20Plan%3A%0A%E2%80%A2%20Live%20Project%20Hub%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20PDF%20Study%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWarmest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">4. منظمة الأغذية والزراعة للأمم المتحدة — المكتب الإقليمي للشرق الأدنى وشمال أفريقيا بالقاهرة (FAO-RNE)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">FAO Regional Office for the Near East and North Africa (FAO-RNE Cairo) | قيمة المنحة/الدعم: Technical Cooperation + FAO Green Cities Initiative Support</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                FAO-RNE@fao.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: FAO Green Cities Initiative — Community Urban Food Forest & Dryland Agroforestry Pilot in 6th of October City, Egypt</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear Forestry and Natural Resources Management Team,
+FAO Regional Office for the Near East and North Africa (FAO-RNE), Dokki, Cairo,
+
+We are writing to introduce a community-driven Urban Agroforestry & Permaculture Food Forest pilot in 6th of October City, Giza (14,906 m² / 3.55 feddans at 29.9535736° N, 30.9217508° E), designed in alignment with the FAO Green Cities Initiative and Egypt's "100 Million Trees" Presidential Initiative.
+
+Using open-source satellite telemetry (Copernicus Sentinel-2, DEM, ISRIC SoilGrids, NASA SMAP, and 10-year ECMWF ERA5 climate records), we have engineered a replicable zero-cost arid urban food forest blueprint combining:
+• High-density Miyawaki shelterbelts + 7-layer syntropic food forest guilds.
+• Subsurface porous clay pot (Olla) irrigation + Keyline stormwater swales + nocturnal hydraulic lift via Sea Buckthorn (Hippophae rhamnoides) and seed-grown Baobab (Adansonia digitata).
+• 12.8 metric tons/year of free nutritious fruits, olives, carob, moringa, and medicinal herbs for urban residents.
+
+We kindly request FAO-RNE's technical endorsement, inclusion in FAO Urban Greening knowledge networks in Egypt, and guidance on available micro-grant or Technical Cooperation Programme (TCP) support.
+
+• Live Project Portal: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Feasibility & Engineering Study (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+Respectfully,
+Founding Community Committee — 6th of October City Permaculture Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=FAO-RNE@fao.org&su=FAO%20Green%20Cities%20Initiative%20%E2%80%94%20Community%20Urban%20Food%20Forest%20%26%20Dryland%20Agroforestry%20Pilot%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Forestry%20and%20Natural%20Resources%20Management%20Team%2C%0AFAO%20Regional%20Office%20for%20the%20Near%20East%20and%20North%20Africa%20%28FAO-RNE%29%2C%20Dokki%2C%20Cairo%2C%0A%0AWe%20are%20writing%20to%20introduce%20a%20community-driven%20Urban%20Agroforestry%20%26%20Permaculture%20Food%20Forest%20pilot%20in%206th%20of%20October%20City%2C%20Giza%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%2C%20designed%20in%20alignment%20with%20the%20FAO%20Green%20Cities%20Initiative%20and%20Egypt%27s%20%22100%20Million%20Trees%22%20Presidential%20Initiative.%0A%0AUsing%20open-source%20satellite%20telemetry%20%28Copernicus%20Sentinel-2%2C%20DEM%2C%20ISRIC%20SoilGrids%2C%20NASA%20SMAP%2C%20and%2010-year%20ECMWF%20ERA5%20climate%20records%29%2C%20we%20have%20engineered%20a%20replicable%20zero-cost%20arid%20urban%20food%20forest%20blueprint%20combining%3A%0A%E2%80%A2%20High-density%20Miyawaki%20shelterbelts%20%2B%207-layer%20syntropic%20food%20forest%20guilds.%0A%E2%80%A2%20Subsurface%20porous%20clay%20pot%20%28Olla%29%20irrigation%20%2B%20Keyline%20stormwater%20swales%20%2B%20nocturnal%20hydraulic%20lift%20via%20Sea%20Buckthorn%20%28Hippophae%20rhamnoides%29%20and%20seed-grown%20Baobab%20%28Adansonia%20digitata%29.%0A%E2%80%A2%2012.8%20metric%20tons/year%20of%20free%20nutritious%20fruits%2C%20olives%2C%20carob%2C%20moringa%2C%20and%20medicinal%20herbs%20for%20urban%20residents.%0A%0AWe%20kindly%20request%20FAO-RNE%27s%20technical%20endorsement%2C%20inclusion%20in%20FAO%20Urban%20Greening%20knowledge%20networks%20in%20Egypt%2C%20and%20guidance%20on%20available%20micro-grant%20or%20Technical%20Cooperation%20Programme%20%28TCP%29%20support.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Engineering%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0ARespectfully%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Permaculture%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:FAO-RNE@fao.org?subject=FAO%20Green%20Cities%20Initiative%20%E2%80%94%20Community%20Urban%20Food%20Forest%20%26%20Dryland%20Agroforestry%20Pilot%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Forestry%20and%20Natural%20Resources%20Management%20Team%2C%0AFAO%20Regional%20Office%20for%20the%20Near%20East%20and%20North%20Africa%20%28FAO-RNE%29%2C%20Dokki%2C%20Cairo%2C%0A%0AWe%20are%20writing%20to%20introduce%20a%20community-driven%20Urban%20Agroforestry%20%26%20Permaculture%20Food%20Forest%20pilot%20in%206th%20of%20October%20City%2C%20Giza%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%2C%20designed%20in%20alignment%20with%20the%20FAO%20Green%20Cities%20Initiative%20and%20Egypt%27s%20%22100%20Million%20Trees%22%20Presidential%20Initiative.%0A%0AUsing%20open-source%20satellite%20telemetry%20%28Copernicus%20Sentinel-2%2C%20DEM%2C%20ISRIC%20SoilGrids%2C%20NASA%20SMAP%2C%20and%2010-year%20ECMWF%20ERA5%20climate%20records%29%2C%20we%20have%20engineered%20a%20replicable%20zero-cost%20arid%20urban%20food%20forest%20blueprint%20combining%3A%0A%E2%80%A2%20High-density%20Miyawaki%20shelterbelts%20%2B%207-layer%20syntropic%20food%20forest%20guilds.%0A%E2%80%A2%20Subsurface%20porous%20clay%20pot%20%28Olla%29%20irrigation%20%2B%20Keyline%20stormwater%20swales%20%2B%20nocturnal%20hydraulic%20lift%20via%20Sea%20Buckthorn%20%28Hippophae%20rhamnoides%29%20and%20seed-grown%20Baobab%20%28Adansonia%20digitata%29.%0A%E2%80%A2%2012.8%20metric%20tons/year%20of%20free%20nutritious%20fruits%2C%20olives%2C%20carob%2C%20moringa%2C%20and%20medicinal%20herbs%20for%20urban%20residents.%0A%0AWe%20kindly%20request%20FAO-RNE%27s%20technical%20endorsement%2C%20inclusion%20in%20FAO%20Urban%20Greening%20knowledge%20networks%20in%20Egypt%2C%20and%20guidance%20on%20available%20micro-grant%20or%20Technical%20Cooperation%20Programme%20%28TCP%29%20support.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Engineering%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0ARespectfully%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Permaculture%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">5. المركز الدولي للبحوث الزراعية في المناطق الجافة بالقاهرة (ICARDA) والمركز العالمي للحراجة الزراعية (ICRAF)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">ICARDA Cairo & CIFOR-ICRAF (World Agroforestry — Drylands Program) | قيمة المنحة/الدعم: Dryland Tree Germplasm + Research Grant Partnership</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                icarda@cgiar.org, ifpri-egypt@cgiar.org, icraf@cgiar.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Dryland Urban Agroforestry Living Lab in 6th of October City, Egypt — Germplasm & Research Collaboration Inquiry</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear ICARDA Cairo and CIFOR-ICRAF Dryland Agroforestry Teams,
+
+We invite ICARDA and CIFOR-ICRAF to collaborate on a 14,906 m² (3.55-feddan) dryland agroforestry and bio-irrigation living lab in 6th of October City, Giza, Egypt (29.9535736° N, 30.9217508° E).
+
+Our site integrates:
+1. Bio-Hydraulic Redistribution & Actinorhizal N-Fixation: Pairing deep-rooted Hippophae rhamnoides subsp. turkestanica (Frankia symbiosis + organic acid P-solubilization in pH 8.0 calcareous soil + nocturnal hydraulic lift from the 34% moist 1–3m soil layer mapped by NASA SMAP) with seed-grown Adansonia digitata (Baobab tuberous caudex subsoiling and mucilage hydrogel leaf litter).
+2. Ultra-Low-Cost Water Harvesting: Three contour swales (828 m³ storm capacity) + buried unglazed clay Ollas + AC condensate and greywater reed-bed bio-filtration, cutting irrigation water demand by 78%.
+
+We are seeking high-quality arid-adapted tree seeds/germplasm, soil microbial inoculants (Frankia & AMF Glomus strains), and joint research/funding support.
+
+• Project Portal: https://cryptoprince9.github.io/october6-food-forest-form/
+• Complete Technical Dossier (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+Best regards,
+Founding Community Committee — 6th of October City Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=icarda@cgiar.org,ifpri-egypt@cgiar.org,icraf@cgiar.org&su=Dryland%20Urban%20Agroforestry%20Living%20Lab%20in%206th%20of%20October%20City%2C%20Egypt%20%E2%80%94%20Germplasm%20%26%20Research%20Collaboration%20Inquiry&body=Dear%20ICARDA%20Cairo%20and%20CIFOR-ICRAF%20Dryland%20Agroforestry%20Teams%2C%0A%0AWe%20invite%20ICARDA%20and%20CIFOR-ICRAF%20to%20collaborate%20on%20a%2014%2C906%20m%C2%B2%20%283.55-feddan%29%20dryland%20agroforestry%20and%20bio-irrigation%20living%20lab%20in%206th%20of%20October%20City%2C%20Giza%2C%20Egypt%20%2829.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20site%20integrates%3A%0A1.%20Bio-Hydraulic%20Redistribution%20%26%20Actinorhizal%20N-Fixation%3A%20Pairing%20deep-rooted%20Hippophae%20rhamnoides%20subsp.%20turkestanica%20%28Frankia%20symbiosis%20%2B%20organic%20acid%20P-solubilization%20in%20pH%208.0%20calcareous%20soil%20%2B%20nocturnal%20hydraulic%20lift%20from%20the%2034%25%20moist%201%E2%80%933m%20soil%20layer%20mapped%20by%20NASA%20SMAP%29%20with%20seed-grown%20Adansonia%20digitata%20%28Baobab%20tuberous%20caudex%20subsoiling%20and%20mucilage%20hydrogel%20leaf%20litter%29.%0A2.%20Ultra-Low-Cost%20Water%20Harvesting%3A%20Three%20contour%20swales%20%28828%20m%C2%B3%20storm%20capacity%29%20%2B%20buried%20unglazed%20clay%20Ollas%20%2B%20AC%20condensate%20and%20greywater%20reed-bed%20bio-filtration%2C%20cutting%20irrigation%20water%20demand%20by%2078%25.%0A%0AWe%20are%20seeking%20high-quality%20arid-adapted%20tree%20seeds/germplasm%2C%20soil%20microbial%20inoculants%20%28Frankia%20%26%20AMF%20Glomus%20strains%29%2C%20and%20joint%20research/funding%20support.%0A%0A%E2%80%A2%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Complete%20Technical%20Dossier%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0ABest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:icarda@cgiar.org,ifpri-egypt@cgiar.org,icraf@cgiar.org?subject=Dryland%20Urban%20Agroforestry%20Living%20Lab%20in%206th%20of%20October%20City%2C%20Egypt%20%E2%80%94%20Germplasm%20%26%20Research%20Collaboration%20Inquiry&body=Dear%20ICARDA%20Cairo%20and%20CIFOR-ICRAF%20Dryland%20Agroforestry%20Teams%2C%0A%0AWe%20invite%20ICARDA%20and%20CIFOR-ICRAF%20to%20collaborate%20on%20a%2014%2C906%20m%C2%B2%20%283.55-feddan%29%20dryland%20agroforestry%20and%20bio-irrigation%20living%20lab%20in%206th%20of%20October%20City%2C%20Giza%2C%20Egypt%20%2829.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20site%20integrates%3A%0A1.%20Bio-Hydraulic%20Redistribution%20%26%20Actinorhizal%20N-Fixation%3A%20Pairing%20deep-rooted%20Hippophae%20rhamnoides%20subsp.%20turkestanica%20%28Frankia%20symbiosis%20%2B%20organic%20acid%20P-solubilization%20in%20pH%208.0%20calcareous%20soil%20%2B%20nocturnal%20hydraulic%20lift%20from%20the%2034%25%20moist%201%E2%80%933m%20soil%20layer%20mapped%20by%20NASA%20SMAP%29%20with%20seed-grown%20Adansonia%20digitata%20%28Baobab%20tuberous%20caudex%20subsoiling%20and%20mucilage%20hydrogel%20leaf%20litter%29.%0A2.%20Ultra-Low-Cost%20Water%20Harvesting%3A%20Three%20contour%20swales%20%28828%20m%C2%B3%20storm%20capacity%29%20%2B%20buried%20unglazed%20clay%20Ollas%20%2B%20AC%20condensate%20and%20greywater%20reed-bed%20bio-filtration%2C%20cutting%20irrigation%20water%20demand%20by%2078%25.%0A%0AWe%20are%20seeking%20high-quality%20arid-adapted%20tree%20seeds/germplasm%2C%20soil%20microbial%20inoculants%20%28Frankia%20%26%20AMF%20Glomus%20strains%29%2C%20and%20joint%20research/funding%20support.%0A%0A%E2%80%A2%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Complete%20Technical%20Dossier%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0ABest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">6. جائزة Lush Spring Prize العالمية للمشروعات التجديدية وجائزة مجلة البرماكالتشر</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">Lush Spring Prize & Permaculture Magazine Award | قيمة المنحة/الدعم: £10,000 – £25,000 GBP</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                lushspringprize@gmail.com, anna@ethicalconsumer.org, francesca@ethicalconsumer.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Lush Spring Prize / Permaculture Award Inquiry: Free Community Permaculture Food Forest in 6th of October City, Egypt</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear Lush Spring Prize and Ethical Consumer Team,
+
+We are writing from 6th of October City, Egypt, to share our community-designed Permaculture & Miyawaki Food Forest project (14,906 m² / 3.55 feddans at 29.9535736° N, 30.9217508° E) and inquire about applying for the Lush Spring Prize (Intentional / Young Projects & Permaculture Magazine Award).
+
+Embodying the three Permaculture Ethics (Earth Care, People Care, Fair Share), our project:
+• Reclaims a barren 14,906 m² urban desert plot into a 7-layer edible ecosystem and Miyawaki shelterbelt using 100% open-source satellite/soil design, rainwater-harvesting swales, AC condensate recovery, clay pot (Olla) irrigation, and community market composting.
+• Integrates seed-grown Baobab and Sea Buckthorn for passive nocturnal hydraulic lift and biological soil remediation.
+• Provides up to 12.8 tons/year of free organic fruit, olives, carob, moringa, and medicinal herbs to surrounding families, schools, and local charities.
+
+• Live Community Portal & Survey: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Feasibility & Design Portfolio (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+Thank you for your inspiring support of global regeneration!
+
+Warm regards,
+Founding Community Committee — 6th of October City Food Forest, Egypt
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lushspringprize@gmail.com,anna@ethicalconsumer.org,francesca@ethicalconsumer.org&su=Lush%20Spring%20Prize%20/%20Permaculture%20Award%20Inquiry%3A%20Free%20Community%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Lush%20Spring%20Prize%20and%20Ethical%20Consumer%20Team%2C%0A%0AWe%20are%20writing%20from%206th%20of%20October%20City%2C%20Egypt%2C%20to%20share%20our%20community-designed%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20project%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%20and%20inquire%20about%20applying%20for%20the%20Lush%20Spring%20Prize%20%28Intentional%20/%20Young%20Projects%20%26%20Permaculture%20Magazine%20Award%29.%0A%0AEmbodying%20the%20three%20Permaculture%20Ethics%20%28Earth%20Care%2C%20People%20Care%2C%20Fair%20Share%29%2C%20our%20project%3A%0A%E2%80%A2%20Reclaims%20a%20barren%2014%2C906%20m%C2%B2%20urban%20desert%20plot%20into%20a%207-layer%20edible%20ecosystem%20and%20Miyawaki%20shelterbelt%20using%20100%25%20open-source%20satellite/soil%20design%2C%20rainwater-harvesting%20swales%2C%20AC%20condensate%20recovery%2C%20clay%20pot%20%28Olla%29%20irrigation%2C%20and%20community%20market%20composting.%0A%E2%80%A2%20Integrates%20seed-grown%20Baobab%20and%20Sea%20Buckthorn%20for%20passive%20nocturnal%20hydraulic%20lift%20and%20biological%20soil%20remediation.%0A%E2%80%A2%20Provides%20up%20to%2012.8%20tons/year%20of%20free%20organic%20fruit%2C%20olives%2C%20carob%2C%20moringa%2C%20and%20medicinal%20herbs%20to%20surrounding%20families%2C%20schools%2C%20and%20local%20charities.%0A%0A%E2%80%A2%20Live%20Community%20Portal%20%26%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Design%20Portfolio%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AThank%20you%20for%20your%20inspiring%20support%20of%20global%20regeneration%21%0A%0AWarm%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%2C%20Egypt%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:lushspringprize@gmail.com,anna@ethicalconsumer.org,francesca@ethicalconsumer.org?subject=Lush%20Spring%20Prize%20/%20Permaculture%20Award%20Inquiry%3A%20Free%20Community%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Lush%20Spring%20Prize%20and%20Ethical%20Consumer%20Team%2C%0A%0AWe%20are%20writing%20from%206th%20of%20October%20City%2C%20Egypt%2C%20to%20share%20our%20community-designed%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20project%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%20and%20inquire%20about%20applying%20for%20the%20Lush%20Spring%20Prize%20%28Intentional%20/%20Young%20Projects%20%26%20Permaculture%20Magazine%20Award%29.%0A%0AEmbodying%20the%20three%20Permaculture%20Ethics%20%28Earth%20Care%2C%20People%20Care%2C%20Fair%20Share%29%2C%20our%20project%3A%0A%E2%80%A2%20Reclaims%20a%20barren%2014%2C906%20m%C2%B2%20urban%20desert%20plot%20into%20a%207-layer%20edible%20ecosystem%20and%20Miyawaki%20shelterbelt%20using%20100%25%20open-source%20satellite/soil%20design%2C%20rainwater-harvesting%20swales%2C%20AC%20condensate%20recovery%2C%20clay%20pot%20%28Olla%29%20irrigation%2C%20and%20community%20market%20composting.%0A%E2%80%A2%20Integrates%20seed-grown%20Baobab%20and%20Sea%20Buckthorn%20for%20passive%20nocturnal%20hydraulic%20lift%20and%20biological%20soil%20remediation.%0A%E2%80%A2%20Provides%20up%20to%2012.8%20tons/year%20of%20free%20organic%20fruit%2C%20olives%2C%20carob%2C%20moringa%2C%20and%20medicinal%20herbs%20to%20surrounding%20families%2C%20schools%2C%20and%20local%20charities.%0A%0A%E2%80%A2%20Live%20Community%20Portal%20%26%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Design%20Portfolio%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AThank%20you%20for%20your%20inspiring%20support%20of%20global%20regeneration%21%0A%0AWarm%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%2C%20Egypt%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">7. منظمة One Tree Planted العالمية للتشجير المجتمعي والحضري</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">One Tree Planted — Global Urban & Community Reforestation | قيمة المنحة/الدعم: $10,000 – $50,000 USD (Tree Planting Grant)</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                hello@onetreeplanted.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Planting Partner Grant Inquiry: 10,500-Tree Community Food Forest & Miyawaki Pocket Forest in 6th of October City, Egypt</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear One Tree Planted Projects & Partnerships Team,
+
+We are reaching out to propose a high-impact Urban Reforestation & Community Food Forest project in 6th of October City, Greater Cairo, Egypt (14,906 m² / 3.55 acres at 29.9535736° N, 30.9217508° E).
+
+Our project plants 10,500 native and drought-hardy fruit, nut, and nitrogen-fixing trees (Olive, Fig, Pomegranate, Date Palm, Carob, Moringa, Sidr, Acacia, Baobab, and Sea Buckthorn) using a hybrid Miyawaki perimeter + 7-layer Permaculture Food Forest design.
+• Survival Rate >90% in Arid Desert: Guaranteed via 3 Keyline stormwater-harvesting swales (828 m³ capacity), buried unglazed clay Ollas (-78% water use), 15cm organic mulch, and nocturnal hydraulic lift.
+• Community Impact: Directly cools surrounding residential blocks by 4.5°C, sequesters 41 tons CO₂/year, serves 3 adjacent children's nurseries/academies, and yields 12.8 tons/year of free organic food.
+
+• Live Project Portal: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Technical Feasibility Study (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+We would love to apply as a community planting partner in Egypt.
+
+Best regards,
+Founding Community Committee — 6th of October City Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@onetreeplanted.org&su=Planting%20Partner%20Grant%20Inquiry%3A%2010%2C500-Tree%20Community%20Food%20Forest%20%26%20Miyawaki%20Pocket%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20One%20Tree%20Planted%20Projects%20%26%20Partnerships%20Team%2C%0A%0AWe%20are%20reaching%20out%20to%20propose%20a%20high-impact%20Urban%20Reforestation%20%26%20Community%20Food%20Forest%20project%20in%206th%20of%20October%20City%2C%20Greater%20Cairo%2C%20Egypt%20%2814%2C906%20m%C2%B2%20/%203.55%20acres%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20project%20plants%2010%2C500%20native%20and%20drought-hardy%20fruit%2C%20nut%2C%20and%20nitrogen-fixing%20trees%20%28Olive%2C%20Fig%2C%20Pomegranate%2C%20Date%20Palm%2C%20Carob%2C%20Moringa%2C%20Sidr%2C%20Acacia%2C%20Baobab%2C%20and%20Sea%20Buckthorn%29%20using%20a%20hybrid%20Miyawaki%20perimeter%20%2B%207-layer%20Permaculture%20Food%20Forest%20design.%0A%E2%80%A2%20Survival%20Rate%20%3E90%25%20in%20Arid%20Desert%3A%20Guaranteed%20via%203%20Keyline%20stormwater-harvesting%20swales%20%28828%20m%C2%B3%20capacity%29%2C%20buried%20unglazed%20clay%20Ollas%20%28-78%25%20water%20use%29%2C%2015cm%20organic%20mulch%2C%20and%20nocturnal%20hydraulic%20lift.%0A%E2%80%A2%20Community%20Impact%3A%20Directly%20cools%20surrounding%20residential%20blocks%20by%204.5%C2%B0C%2C%20sequesters%2041%20tons%20CO%E2%82%82/year%2C%20serves%203%20adjacent%20children%27s%20nurseries/academies%2C%20and%20yields%2012.8%20tons/year%20of%20free%20organic%20food.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Technical%20Feasibility%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20would%20love%20to%20apply%20as%20a%20community%20planting%20partner%20in%20Egypt.%0A%0ABest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:hello@onetreeplanted.org?subject=Planting%20Partner%20Grant%20Inquiry%3A%2010%2C500-Tree%20Community%20Food%20Forest%20%26%20Miyawaki%20Pocket%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20One%20Tree%20Planted%20Projects%20%26%20Partnerships%20Team%2C%0A%0AWe%20are%20reaching%20out%20to%20propose%20a%20high-impact%20Urban%20Reforestation%20%26%20Community%20Food%20Forest%20project%20in%206th%20of%20October%20City%2C%20Greater%20Cairo%2C%20Egypt%20%2814%2C906%20m%C2%B2%20/%203.55%20acres%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0AOur%20project%20plants%2010%2C500%20native%20and%20drought-hardy%20fruit%2C%20nut%2C%20and%20nitrogen-fixing%20trees%20%28Olive%2C%20Fig%2C%20Pomegranate%2C%20Date%20Palm%2C%20Carob%2C%20Moringa%2C%20Sidr%2C%20Acacia%2C%20Baobab%2C%20and%20Sea%20Buckthorn%29%20using%20a%20hybrid%20Miyawaki%20perimeter%20%2B%207-layer%20Permaculture%20Food%20Forest%20design.%0A%E2%80%A2%20Survival%20Rate%20%3E90%25%20in%20Arid%20Desert%3A%20Guaranteed%20via%203%20Keyline%20stormwater-harvesting%20swales%20%28828%20m%C2%B3%20capacity%29%2C%20buried%20unglazed%20clay%20Ollas%20%28-78%25%20water%20use%29%2C%2015cm%20organic%20mulch%2C%20and%20nocturnal%20hydraulic%20lift.%0A%E2%80%A2%20Community%20Impact%3A%20Directly%20cools%20surrounding%20residential%20blocks%20by%204.5%C2%B0C%2C%20sequesters%2041%20tons%20CO%E2%82%82/year%2C%20serves%203%20adjacent%20children%27s%20nurseries/academies%2C%20and%20yields%2012.8%20tons/year%20of%20free%20organic%20food.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Technical%20Feasibility%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20would%20love%20to%20apply%20as%20a%20community%20planting%20partner%20in%20Egypt.%0A%0ABest%20regards%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">8. صندوق Global Greengrants Fund وصندوق الزراعة الإيكولوجية (Agroecology Fund)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">Global Greengrants Fund & Agroecology Fund | قيمة المنحة/الدعم: $5,000 – $25,000 USD</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                info@greengrants.org, contact@agroecologyfund.org, daniel@agroecologyfund.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Grassroots Grant Inquiry: Community-Governed Permaculture Food Forest in 6th of October City, Egypt</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear Global Greengrants Fund and Agroecology Fund Teams,
+
+We are writing from 6th of October City, Egypt, to inquire about grassroots grant support for our community-governed Permaculture & Miyawaki Food Forest (14,906 m² / 3.55 feddans at 29.9535736° N, 30.9217508° E).
+
+Designed with open-source satellite and agroecological tools, this initiative empowers local residents, small grocers, nurseries, and a neighborhood charity (Jana Al Janatain) to transform a barren urban desert lot into a self-sustaining 7-layer food forest producing 12.8 tons/year of free organic food while harvesting 100% of its water from flash-flood street runoff, AC condensate, and greywater bio-filtration.
+
+• Live Community Hub & Survey: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Feasibility & Engineering Study (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+Thank you for your consideration and support for grassroots agroecology in the MENA region.
+
+In solidarity,
+Founding Community Committee — 6th of October City Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@greengrants.org,contact@agroecologyfund.org,daniel@agroecologyfund.org&su=Grassroots%20Grant%20Inquiry%3A%20Community-Governed%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Global%20Greengrants%20Fund%20and%20Agroecology%20Fund%20Teams%2C%0A%0AWe%20are%20writing%20from%206th%20of%20October%20City%2C%20Egypt%2C%20to%20inquire%20about%20grassroots%20grant%20support%20for%20our%20community-governed%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0ADesigned%20with%20open-source%20satellite%20and%20agroecological%20tools%2C%20this%20initiative%20empowers%20local%20residents%2C%20small%20grocers%2C%20nurseries%2C%20and%20a%20neighborhood%20charity%20%28Jana%20Al%20Janatain%29%20to%20transform%20a%20barren%20urban%20desert%20lot%20into%20a%20self-sustaining%207-layer%20food%20forest%20producing%2012.8%20tons/year%20of%20free%20organic%20food%20while%20harvesting%20100%25%20of%20its%20water%20from%20flash-flood%20street%20runoff%2C%20AC%20condensate%2C%20and%20greywater%20bio-filtration.%0A%0A%E2%80%A2%20Live%20Community%20Hub%20%26%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Engineering%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AThank%20you%20for%20your%20consideration%20and%20support%20for%20grassroots%20agroecology%20in%20the%20MENA%20region.%0A%0AIn%20solidarity%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:info@greengrants.org,contact@agroecologyfund.org,daniel@agroecologyfund.org?subject=Grassroots%20Grant%20Inquiry%3A%20Community-Governed%20Permaculture%20Food%20Forest%20in%206th%20of%20October%20City%2C%20Egypt&body=Dear%20Global%20Greengrants%20Fund%20and%20Agroecology%20Fund%20Teams%2C%0A%0AWe%20are%20writing%20from%206th%20of%20October%20City%2C%20Egypt%2C%20to%20inquire%20about%20grassroots%20grant%20support%20for%20our%20community-governed%20Permaculture%20%26%20Miyawaki%20Food%20Forest%20%2814%2C906%20m%C2%B2%20/%203.55%20feddans%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29.%0A%0ADesigned%20with%20open-source%20satellite%20and%20agroecological%20tools%2C%20this%20initiative%20empowers%20local%20residents%2C%20small%20grocers%2C%20nurseries%2C%20and%20a%20neighborhood%20charity%20%28Jana%20Al%20Janatain%29%20to%20transform%20a%20barren%20urban%20desert%20lot%20into%20a%20self-sustaining%207-layer%20food%20forest%20producing%2012.8%20tons/year%20of%20free%20organic%20food%20while%20harvesting%20100%25%20of%20its%20water%20from%20flash-flood%20street%20runoff%2C%20AC%20condensate%2C%20and%20greywater%20bio-filtration.%0A%0A%E2%80%A2%20Live%20Community%20Hub%20%26%20Survey%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Feasibility%20%26%20Engineering%20Study%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AThank%20you%20for%20your%20consideration%20and%20support%20for%20grassroots%20agroecology%20in%20the%20MENA%20region.%0A%0AIn%20solidarity%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">9. الوكالة الألمانية للتعاون الدولي (GIZ Egypt) وبرنامج المدن الخضراء (6th of October GCAP)</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">GIZ Egypt & EBRD Green Cities (6th of October GCAP Alignment) | قيمة المنحة/الدعم: Technical & Infrastructure Co-Financing</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                giz-aegypten@giz.de, info@giz.de
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: Green Urban Infrastructure Pilot in 6th of October City (GCAP Alignment): Sponge-City Permaculture Food Forest</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">Dear GIZ Egypt Urban Development, Water, and Climate Adaptation Teams,
+
+We are pleased to share the engineering feasibility study and master plan for a community-led Green Urban Infrastructure & Sponge-City Food Forest pilot in 6th of October City, Giza (14,906 m² at 29.9535736° N, 30.9217508° E), directly supporting 6th of October City's Green City Action Plan (GCAP).
+
+Our design solves two critical municipal challenges at zero operational cost to the City Authority:
+1. Urban Flash-Flood Mitigation: Three Keyline contour swales with street curb-cuts capture up to 828 m³ of stormwater per storm event (100% of a 31.5 mm Dragon Storm event).
+2. Urban Heat Island & Water Scarcity: A 10,500-tree Miyawaki + 7-layer food forest irrigated via AC condensate, bio-filtered greywater, subsurface clay Ollas, and deep-root hydraulic lift (Baobab & Sea Buckthorn).
+
+• Live Project Portal: https://cryptoprince9.github.io/october6-food-forest-form/
+• Full Engineering Dossier (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+We welcome collaboration with GIZ Egypt's urban greening and climate adaptation programs.
+
+Sincerely,
+Founding Community Committee — 6th of October City Food Forest
+Email: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=giz-aegypten@giz.de,info@giz.de&su=Green%20Urban%20Infrastructure%20Pilot%20in%206th%20of%20October%20City%20%28GCAP%20Alignment%29%3A%20Sponge-City%20Permaculture%20Food%20Forest&body=Dear%20GIZ%20Egypt%20Urban%20Development%2C%20Water%2C%20and%20Climate%20Adaptation%20Teams%2C%0A%0AWe%20are%20pleased%20to%20share%20the%20engineering%20feasibility%20study%20and%20master%20plan%20for%20a%20community-led%20Green%20Urban%20Infrastructure%20%26%20Sponge-City%20Food%20Forest%20pilot%20in%206th%20of%20October%20City%2C%20Giza%20%2814%2C906%20m%C2%B2%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%2C%20directly%20supporting%206th%20of%20October%20City%27s%20Green%20City%20Action%20Plan%20%28GCAP%29.%0A%0AOur%20design%20solves%20two%20critical%20municipal%20challenges%20at%20zero%20operational%20cost%20to%20the%20City%20Authority%3A%0A1.%20Urban%20Flash-Flood%20Mitigation%3A%20Three%20Keyline%20contour%20swales%20with%20street%20curb-cuts%20capture%20up%20to%20828%20m%C2%B3%20of%20stormwater%20per%20storm%20event%20%28100%25%20of%20a%2031.5%20mm%20Dragon%20Storm%20event%29.%0A2.%20Urban%20Heat%20Island%20%26%20Water%20Scarcity%3A%20A%2010%2C500-tree%20Miyawaki%20%2B%207-layer%20food%20forest%20irrigated%20via%20AC%20condensate%2C%20bio-filtered%20greywater%2C%20subsurface%20clay%20Ollas%2C%20and%20deep-root%20hydraulic%20lift%20%28Baobab%20%26%20Sea%20Buckthorn%29.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Engineering%20Dossier%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20welcome%20collaboration%20with%20GIZ%20Egypt%27s%20urban%20greening%20and%20climate%20adaptation%20programs.%0A%0ASincerely%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:giz-aegypten@giz.de,info@giz.de?subject=Green%20Urban%20Infrastructure%20Pilot%20in%206th%20of%20October%20City%20%28GCAP%20Alignment%29%3A%20Sponge-City%20Permaculture%20Food%20Forest&body=Dear%20GIZ%20Egypt%20Urban%20Development%2C%20Water%2C%20and%20Climate%20Adaptation%20Teams%2C%0A%0AWe%20are%20pleased%20to%20share%20the%20engineering%20feasibility%20study%20and%20master%20plan%20for%20a%20community-led%20Green%20Urban%20Infrastructure%20%26%20Sponge-City%20Food%20Forest%20pilot%20in%206th%20of%20October%20City%2C%20Giza%20%2814%2C906%20m%C2%B2%20at%2029.9535736%C2%B0%20N%2C%2030.9217508%C2%B0%20E%29%2C%20directly%20supporting%206th%20of%20October%20City%27s%20Green%20City%20Action%20Plan%20%28GCAP%29.%0A%0AOur%20design%20solves%20two%20critical%20municipal%20challenges%20at%20zero%20operational%20cost%20to%20the%20City%20Authority%3A%0A1.%20Urban%20Flash-Flood%20Mitigation%3A%20Three%20Keyline%20contour%20swales%20with%20street%20curb-cuts%20capture%20up%20to%20828%20m%C2%B3%20of%20stormwater%20per%20storm%20event%20%28100%25%20of%20a%2031.5%20mm%20Dragon%20Storm%20event%29.%0A2.%20Urban%20Heat%20Island%20%26%20Water%20Scarcity%3A%20A%2010%2C500-tree%20Miyawaki%20%2B%207-layer%20food%20forest%20irrigated%20via%20AC%20condensate%2C%20bio-filtered%20greywater%2C%20subsurface%20clay%20Ollas%2C%20and%20deep-root%20hydraulic%20lift%20%28Baobab%20%26%20Sea%20Buckthorn%29.%0A%0A%E2%80%A2%20Live%20Project%20Portal%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20Full%20Engineering%20Dossier%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0AWe%20welcome%20collaboration%20with%20GIZ%20Egypt%27s%20urban%20greening%20and%20climate%20adaptation%20programs.%0A%0ASincerely%2C%0AFounding%20Community%20Committee%20%E2%80%94%206th%20of%20October%20City%20Food%20Forest%0AEmail%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+    <div class="avoid-break" style="border:1.5px solid #95D5B2; border-right:6px solid #1B4332; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#FAFDFB;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:1px solid #CBD5E1; padding-bottom:6px; margin-bottom:8px;">
+            <div>
+                <strong style="color:#1B4332; font-size:10.5pt;">10. مؤسسة ساويرس للتنمية الاجتماعية وبرامج المسؤولية المجتمعية الخضراء بمصر</strong>
+                <div style="font-size:8.5pt; color:#2D6A4F; font-weight:700;">Sawiris Foundation for Social Development & Egyptian Green CSR Partners | قيمة المنحة/الدعم: 250,000 – 1,000,000 EGP (CSR / Community Development Grant)</div>
+            </div>
+            <div style="direction:ltr; font-family:monospace; background:#E8F3EC; padding:4px 8px; border-radius:6px; font-size:8.5pt; font-weight:bold; color:#0F2E1E;">
+                info@sawirisfoundation.org
+            </div>
+        </div>
+        <div style="direction:ltr; text-align:left; font-size:8.6pt; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:8px 10px;">
+            <div style="font-weight:bold; color:#1E3A8A; margin-bottom:4px;">Subject: مقترح رعاية وتمويل مجتمعي: أول غابة طعام مجانية ومياواكي بمدينة 6 أكتوبر (ضمن مبادرة 100 مليون شجرة)</div>
+            <pre style="white-space:pre-wrap; font-family:'Segoe UI', Tahoma, sans-serif; margin:0; font-size:8.2pt; line-height:1.45; color:#1E293B;">السادة الكرام في مؤسسة ساويرس للتنمية الاجتماعية وإدارات المسؤولية المجتمعية والبيئية (CSR)،
+
+تحية طيبة وبعد،
+
+نتشرف نحن اللجنة التأسيسية لمبادرة «غابة الطعام المجتمعية ومياواكي بمدينة 6 أكتوبر» (بالتنسيق مع جهاز تنمية مدينة 6 أكتوبر ووزارة البيئة والجمعيات الأهلية بالمنطقة) بعرض دراسة الجدوى الهندسية والبيئية المتكاملة لتحويل قطعة الأرض الفضاء البالغة مساحتها 14,906 م² (3.55 فدان) شمال سنتر المأمون بمدينة 6 أكتوبر (29.9535736°N, 30.9217508°E) إلى أول غابة طعام حضرية مستدامة ومجانية في مصر.
+
+• الأثر المجتمعي والغذائي: إنتاج 12.8 طن سنوياً من الفواكه والزيتون والمورينجا وثمار التبلدي ونبق البحر توزع مجاناً على الأهالي والأسر المستحقة، مع معمل بيئي مفتوح لأطفال الحضانات والمدارس المحيطة.
+• الاستدامة المائية والمناخية: توفير 78% من استهلاك المياه عبر الفخار المسامي المدفون (Ollas) والرفع الهيدروليكي الحيوي وحصاد مياه الأمطار والتكييفات، واحتجاز 41 طن كربون سنوياً.
+
+• البوابة الرقمية للمشروع واستمارة مشاركة السكان الحية: https://cryptoprince9.github.io/october6-food-forest-form/
+• دراسة الجدوى الشاملة والمخطط الهندسي (PDF): https://cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf
+
+نتطلع لشرف التعاون مع مؤسستكم الموقرة لدعم تعميم هذا النموذج الرائد في المدن المصرية الجديدة.
+
+مع خالص التقدير،
+اللجنة التأسيسية لمبادرة غابة طعام مدينة 6 أكتوبر
+البريد الإلكتروني: aakwaqf@gmail.com</pre>
+        </div>
+        <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sawirisfoundation.org&su=%D9%85%D9%82%D8%AA%D8%B1%D8%AD%20%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9%20%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%20%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%3A%20%D8%A3%D9%88%D9%84%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%20%D9%88%D9%85%D9%8A%D8%A7%D9%88%D8%A7%D9%83%D9%8A%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%28%D8%B6%D9%85%D9%86%20%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20100%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%B4%D8%AC%D8%B1%D8%A9%29&body=%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D9%85%20%D9%81%D9%8A%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B3%D8%A7%D9%88%D9%8A%D8%B1%D8%B3%20%D9%84%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A%D8%A9%20%28CSR%29%D8%8C%0A%0A%D8%AA%D8%AD%D9%8A%D8%A9%20%D8%B7%D9%8A%D8%A8%D8%A9%20%D9%88%D8%A8%D8%B9%D8%AF%D8%8C%0A%0A%D9%86%D8%AA%D8%B4%D8%B1%D9%81%20%D9%86%D8%AD%D9%86%20%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%D9%8A%D8%A9%20%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20%C2%AB%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%D8%A9%20%D9%88%D9%85%D9%8A%D8%A7%D9%88%D8%A7%D9%83%D9%8A%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%C2%BB%20%28%D8%A8%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D9%85%D8%B9%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%D9%88%D9%88%D8%B2%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%29%20%D8%A8%D8%B9%D8%B1%D8%B6%20%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%89%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%20%D9%82%D8%B7%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B1%D8%B6%20%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A8%D8%A7%D9%84%D8%BA%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AD%D8%AA%D9%87%D8%A7%2014%2C906%20%D9%85%C2%B2%20%283.55%20%D9%81%D8%AF%D8%A7%D9%86%29%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%B3%D9%86%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D8%A3%D9%85%D9%88%D9%86%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%2829.9535736%C2%B0N%2C%2030.9217508%C2%B0E%29%20%D8%A5%D9%84%D9%89%20%D8%A3%D9%88%D9%84%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D8%AD%D8%B6%D8%B1%D9%8A%D8%A9%20%D9%85%D8%B3%D8%AA%D8%AF%D8%A7%D9%85%D8%A9%20%D9%88%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%B5%D8%B1.%0A%0A%E2%80%A2%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%3A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%2012.8%20%D8%B7%D9%86%20%D8%B3%D9%86%D9%88%D9%8A%D8%A7%D9%8B%20%D9%85%D9%86%20%D8%A7%D9%84%D9%81%D9%88%D8%A7%D9%83%D9%87%20%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%B1%D9%8A%D9%86%D8%AC%D8%A7%20%D9%88%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A8%D9%84%D8%AF%D9%8A%20%D9%88%D9%86%D8%A8%D9%82%20%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%20%D8%AA%D9%88%D8%B2%D8%B9%20%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A3%D9%87%D8%A7%D9%84%D9%8A%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AD%D9%82%D8%A9%D8%8C%20%D9%85%D8%B9%20%D9%85%D8%B9%D9%85%D9%84%20%D8%A8%D9%8A%D8%A6%D9%8A%20%D9%85%D9%81%D8%AA%D9%88%D8%AD%20%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D9%86%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3%20%D8%A7%D9%84%D9%85%D8%AD%D9%8A%D8%B7%D8%A9.%0A%E2%80%A2%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AF%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%AE%D9%8A%D8%A9%3A%20%D8%AA%D9%88%D9%81%D9%8A%D8%B1%2078%25%20%D9%85%D9%86%20%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%B9%D8%A8%D8%B1%20%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%81%D9%88%D9%86%20%28Ollas%29%20%D9%88%D8%A7%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%87%D9%8A%D8%AF%D8%B1%D9%88%D9%84%D9%8A%D9%83%D9%8A%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D9%8A%20%D9%88%D8%AD%D8%B5%D8%A7%D8%AF%20%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%A3%D9%85%D8%B7%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81%D8%A7%D8%AA%D8%8C%20%D9%88%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%B2%2041%20%D8%B7%D9%86%20%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D8%B3%D9%86%D9%88%D9%8A%D8%A7%D9%8B.%0A%0A%E2%80%A2%20%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%88%D8%A7%D8%B3%D8%AA%D9%85%D8%A7%D8%B1%D8%A9%20%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AD%D9%8A%D8%A9%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%89%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%B7%D8%B7%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0A%D9%86%D8%AA%D8%B7%D9%84%D8%B9%20%D9%84%D8%B4%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D9%85%D8%B9%20%D9%85%D8%A4%D8%B3%D8%B3%D8%AA%D9%83%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B1%D8%A9%20%D9%84%D8%AF%D8%B9%D9%85%20%D8%AA%D8%B9%D9%85%D9%8A%D9%85%20%D9%87%D8%B0%D8%A7%20%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%86%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%0A%0A%D9%85%D8%B9%20%D8%AE%D8%A7%D9%84%D8%B5%20%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%D8%8C%0A%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%D9%8A%D8%A9%20%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%0A%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%3A%20aakwaqf%40gmail.com" target="_blank" style="background:#1B4332; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">📧 إرسال فوري عبر Gmail Web (مُعبأ تلقائياً)</a>
+            <a href="mailto:info@sawirisfoundation.org?subject=%D9%85%D9%82%D8%AA%D8%B1%D8%AD%20%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9%20%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%20%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%3A%20%D8%A3%D9%88%D9%84%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%20%D9%88%D9%85%D9%8A%D8%A7%D9%88%D8%A7%D9%83%D9%8A%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%28%D8%B6%D9%85%D9%86%20%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20100%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%B4%D8%AC%D8%B1%D8%A9%29&body=%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D9%85%20%D9%81%D9%8A%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B3%D8%A7%D9%88%D9%8A%D8%B1%D8%B3%20%D9%84%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A%D8%A9%20%28CSR%29%D8%8C%0A%0A%D8%AA%D8%AD%D9%8A%D8%A9%20%D8%B7%D9%8A%D8%A8%D8%A9%20%D9%88%D8%A8%D8%B9%D8%AF%D8%8C%0A%0A%D9%86%D8%AA%D8%B4%D8%B1%D9%81%20%D9%86%D8%AD%D9%86%20%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%D9%8A%D8%A9%20%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20%C2%AB%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%D8%A9%20%D9%88%D9%85%D9%8A%D8%A7%D9%88%D8%A7%D9%83%D9%8A%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%C2%BB%20%28%D8%A8%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D9%85%D8%B9%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%D9%88%D9%88%D8%B2%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%29%20%D8%A8%D8%B9%D8%B1%D8%B6%20%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%89%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%20%D9%82%D8%B7%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B1%D8%B6%20%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A8%D8%A7%D9%84%D8%BA%D8%A9%20%D9%85%D8%B3%D8%A7%D8%AD%D8%AA%D9%87%D8%A7%2014%2C906%20%D9%85%C2%B2%20%283.55%20%D9%81%D8%AF%D8%A7%D9%86%29%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%B3%D9%86%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D8%A3%D9%85%D9%88%D9%86%20%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%2829.9535736%C2%B0N%2C%2030.9217508%C2%B0E%29%20%D8%A5%D9%84%D9%89%20%D8%A3%D9%88%D9%84%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D8%AD%D8%B6%D8%B1%D9%8A%D8%A9%20%D9%85%D8%B3%D8%AA%D8%AF%D8%A7%D9%85%D8%A9%20%D9%88%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%B5%D8%B1.%0A%0A%E2%80%A2%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%3A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%2012.8%20%D8%B7%D9%86%20%D8%B3%D9%86%D9%88%D9%8A%D8%A7%D9%8B%20%D9%85%D9%86%20%D8%A7%D9%84%D9%81%D9%88%D8%A7%D9%83%D9%87%20%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%B1%D9%8A%D9%86%D8%AC%D8%A7%20%D9%88%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A8%D9%84%D8%AF%D9%8A%20%D9%88%D9%86%D8%A8%D9%82%20%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%20%D8%AA%D9%88%D8%B2%D8%B9%20%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A3%D9%87%D8%A7%D9%84%D9%8A%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AD%D9%82%D8%A9%D8%8C%20%D9%85%D8%B9%20%D9%85%D8%B9%D9%85%D9%84%20%D8%A8%D9%8A%D8%A6%D9%8A%20%D9%85%D9%81%D8%AA%D9%88%D8%AD%20%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D9%86%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3%20%D8%A7%D9%84%D9%85%D8%AD%D9%8A%D8%B7%D8%A9.%0A%E2%80%A2%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AF%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%AE%D9%8A%D8%A9%3A%20%D8%AA%D9%88%D9%81%D9%8A%D8%B1%2078%25%20%D9%85%D9%86%20%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%B9%D8%A8%D8%B1%20%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%81%D9%88%D9%86%20%28Ollas%29%20%D9%88%D8%A7%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%87%D9%8A%D8%AF%D8%B1%D9%88%D9%84%D9%8A%D9%83%D9%8A%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D9%8A%20%D9%88%D8%AD%D8%B5%D8%A7%D8%AF%20%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%A3%D9%85%D8%B7%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81%D8%A7%D8%AA%D8%8C%20%D9%88%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%B2%2041%20%D8%B7%D9%86%20%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D8%B3%D9%86%D9%88%D9%8A%D8%A7%D9%8B.%0A%0A%E2%80%A2%20%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%88%D8%A7%D8%B3%D8%AA%D9%85%D8%A7%D8%B1%D8%A9%20%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AD%D9%8A%D8%A9%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/%0A%E2%80%A2%20%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%89%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%B7%D8%B7%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%20%28PDF%29%3A%20https%3A//cryptoprince9.github.io/october6-food-forest-form/0_Complete_Combined_Portfolio_AR.pdf%0A%0A%D9%86%D8%AA%D8%B7%D9%84%D8%B9%20%D9%84%D8%B4%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D9%85%D8%B9%20%D9%85%D8%A4%D8%B3%D8%B3%D8%AA%D9%83%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B1%D8%A9%20%D9%84%D8%AF%D8%B9%D9%85%20%D8%AA%D8%B9%D9%85%D9%8A%D9%85%20%D9%87%D8%B0%D8%A7%20%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%86%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%0A%0A%D9%85%D8%B9%20%D8%AE%D8%A7%D9%84%D8%B5%20%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%D8%8C%0A%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%D9%8A%D8%A9%20%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9%20%D8%BA%D8%A7%D8%A8%D8%A9%20%D8%B7%D8%B9%D8%A7%D9%85%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%0A%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%3A%20aakwaqf%40gmail.com" style="background:#0077B6; color:#FFF; text-decoration:none; padding:5px 12px; border-radius:6px; font-size:8.4pt; font-weight:bold;">✉️ فتح في برنامج البريد الافتراضي (Outlook / Mail)</a>
+        </div>
+    </div>
+    
+
+</body>
+</html>
