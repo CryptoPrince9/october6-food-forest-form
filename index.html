@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة المشاركة المجتمعية: غابة الطعام المجانية ومياواكي - مدينة 6 أكتوبر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B4332;
+            --primary-mid: #2D6A4F;
+            --accent: #E9C46A;
+            --bg: #E8F3EC;
+            --card-bg: #FFFFFF;
+            --border: #CBD5E1;
+            --req: #D93025;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--bg);
+            color: #202124;
+            margin: 0;
+            padding: 16px 12px 48px 12px;
+            line-height: 1.65;
+        }
+        .form-container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #0F2E1E 0%, #1B4332 60%, #2D6A4F 100%);
+            color: #FFFFFF;
+            border-radius: 12px;
+            padding: 24px 22px;
+            margin-bottom: 14px;
+            border-top: 10px solid var(--accent);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+        }
+        .header-banner .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #0F2E1E;
+            font-weight: 800;
+            font-size: 0.82rem;
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-bottom: 8px;
+        }
+        .header-banner h1 {
+            margin: 4px 0 10px 0;
+            font-size: 1.45rem;
+            line-height: 1.35;
+        }
+        .header-banner p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: #D8F3DC;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            padding: 20px 22px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            transition: border-color 0.2s;
+        }
+        .card:focus-within {
+            border-color: var(--primary);
+            border-right: 5px solid var(--primary);
+        }
+        .info-card {
+            border-top: 6px solid var(--primary);
+        }
+        .q-title {
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1B4332;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .q-sub {
+            font-size: 0.84rem;
+            color: #5F6368;
+            margin-bottom: 12px;
+        }
+        .req {
+            color: var(--req);
+            margin-right: 4px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #CBD5E1;
+            padding: 10px 4px;
+            font-family: inherit;
+            font-size: 0.96rem;
+            background: transparent;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-bottom-color: var(--primary);
+        }
+        .option-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 9px 0;
+            font-size: 0.94rem;
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+        .option-label:hover {
+            background: #F4F9F5;
+        }
+        .option-label input {
+            margin-top: 5px;
+            accent-color: var(--primary);
+            transform: scale(1.2);
+        }
+        .btn-submit {
+            background: var(--primary);
+            color: #FFFFFF;
+            border: none;
+            padding: 13px 32px;
+            font-family: inherit;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(27,67,50,0.25);
+            transition: background 0.2s, transform 0.1s;
+        }
+        .btn-submit:hover {
+            background: var(--primary-mid);
+        }
+        .btn-submit:active {
+            transform: scale(0.99);
+        }
+        .btn-secondary {
+            background: #FFFFFF;
+            color: var(--primary);
+            border: 1.5px solid var(--primary);
+            padding: 10px 18px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .downloads-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .success-box {
+            display: none;
+            background: #D8F3DC;
+            border: 2px solid #1B4332;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.82rem;
+            color: #5F6368;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <div class="header-banner">
+        <span class="badge">مبادرة أهلية تطوعية | بالتنسيق مع جهاز مدينة 6 أكتوبر ووزارة البيئة</span>
+        <h1>استمارة المشاركة المجتمعية: إنشاء غابة الطعام المجانية ومياواكي — مدينة 6 أكتوبر</h1>
+        <p>الموقع: قطعة الأرض الفضاء شمال سنتر المأمون مباشرةً (شارع 2، 13، 14، 15 — إحداثيات: 29.9535736°N, 30.9217508°E — المساحة: 14,906 م² / 3.55 فدان)</p>
+    </div>
+
+    <div class="card info-card">
+        <div style="font-size:0.93rem;">
+            <strong>أهالي وجيران المنطقة الكرام:</strong> تهدف هذه المبادرة إلى تحويل الأرض الفضاء شمال سنتر المأمون إلى <strong>غابة طعام مجتمعية مجانية ومستدامة</strong> بنظام الزراعة المعمرة (Permaculture) وطريقة مياواكي للغابات الكثيفة، مع دمج أشجار <strong>التبلدي (Baobab) ونبق البحر (Sea Buckthorn) والمورينجا والزيتون والتين والرمان والنخيل والخروب</strong>.<br>
+            • <strong>التكلفة:</strong> مجانية وتطوعية بالكامل (تعتمد على الشتلات الحكومية المجانية، الاستنبات بالبذور، حصاد الأمطار ومياه التكييفات، والري بالفخار المسامي Ollas).<br>
+            • <strong>العائد:</strong> جميع ثمار الغابة (حتى 12.8 طن سنوياً) مجانية بالكامل لسكان المنطقة وللتكافل الخيري عبر جمعية جنى الجنتين.
+        </div>
+        <div class="downloads-bar">
+            <a class="btn-secondary" href="0_Complete_Combined_Portfolio_AR.pdf" target="_blank">📄 تحميل دراسة الجدوى والمقترح الحكومي الشامل (PDF)</a>
+            <a class="btn-secondary" href="2_Executive_Government_Proposal_AR.pdf" target="_blank">🏛️ المقترح التنفيذي لجهاز 6 أكتوبر ووزارة البيئة (PDF)</a>
+            <a class="btn-secondary" href="3_Residents_Appeal_and_Charter_AR.pdf" target="_blank">🤝 بيان ودعوة السكان (PDF)</a>
+        </div>
+    </div>
+
+    <form id="permacultureForm" action="https://formsubmit.co/aakwaqf@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="مشاركة جديدة: غابة الطعام المجتمعية - مدينة 6 أكتوبر">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="card">
+            <label class="q-title">1. الاسم الثلاثي (أو اسم الأسرة / المؤسسة / المحل التجاري) <span class="req">*</span></label>
+            <input type="text" name="الاسم_الثلاثي" required placeholder="أدخل اسمك الكامل هنا...">
+        </div>
+
+        <div class="card">
+            <label class="q-title">2. رقم العمارة / اسم الشارع المحيط بالموقع <span class="req">*</span></label>
+            <div class="q-sub">مثال: عمارة 548 - شارع 15 / أو بجوار سنتر المأمون / شارع 2 / شارع 13 / شارع 14</div>
+            <input type="text" name="العنوان_ورقم_العمارة" required placeholder="رقم العمارة والشارع...">
+        </div>
+
+        <div class="card">
+            <label class="q-title">3. رقم الهاتف المحمول (يدعم واتساب للانضمام لمجموعة التنسيق المجتمعي) <span class="req">*</span></label>
+            <input type="tel" name="رقم_الهاتف_واتساب" required placeholder="01xxxxxxxxx">
+        </div>
+
+        <div class="card">
+            <label class="q-title">4. صفتك في المنطقة المحيطة بالموقع <span class="req">*</span></label>
+            <label class="option-label"><input type="radio" name="الصفة" value="ساكن / مالك وحدة سكنية بالعمارات المحيطة" required> <span>ساكن / مالك وحدة سكنية في العمارات المطلة على الأرض أو الشوارع المحيطة (شارع 2، 13، 14، 15)</span></label>
+            <label class="option-label"><input type="radio" name="الصفة" value="مستأجر مقيم بالمنطقة المحيطة"> <span>مستأجر مقيم بالمنطقة المحيطة</span></label>
+            <label class="option-label"><input type="radio" name="الصفة" value="صاحب نشاط تجاري / خدمي (سنتر المأمون، الصالح ماركت، خضروات، صيدلية)"> <span>صاحب نشاط تجاري / خدمي بمحيط الموقع (سنتر المأمون، الصالح ماركت، خضروات المتحدة، صيدلية الواحة، إلخ)</span></label>
+            <label class="option-label"><input type="radio" name="الصفة" value="مؤسسة تعليمية أو حضانة أو جمعية خيرية"> <span>مؤسسة تعليمية أو حضانة أو جمعية خيرية (أكاديمية زهرة، حضانة جوى لاند، Little Bloom، جمعية جنى الجنتين)</span></label>
+            <label class="option-label"><input type="radio" name="الصفة" value="مهندس زراعي / باحث بيئي / متطوع"> <span>مهندس زراعي / متخصص ري وبيئة / متطوع من مدينة 6 أكتوبر</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">5. إقرار التأييد المجتمعي الموجه لجهاز تنمية مدينة 6 أكتوبر ووزارة البيئة <span class="req">*</span></label>
+            <div class="q-sub">هل توافق وتؤيد تخصيص قطعة الأرض الفضاء شمال سنتر المأمون (29.9535736°N, 30.9217508°E) لإنشاء غابة طعام مجتمعية مجانية ومستدامة بالتنسيق مع جهاز مدينة 6 أكتوبر ووزارة البيئة؟</div>
+            <label class="option-label"><input type="radio" name="التأييد_المجتمعي" value="نعم أوافق بشدة وأدعم تقديم الطلب الرسمي لجهاز المدينة ووزارة البيئة" required checked> <span><strong>نعم، أوافق بشدة وأدعم تقديم الطلب الرسمي لجهاز تنمية مدينة 6 أكتوبر ووزارة البيئة</strong></span></label>
+            <label class="option-label"><input type="radio" name="التأييد_المجتمعي" value="نعم أوافق مع الرغبة في حضور اللقاء التأسيسي"> <span>نعم، أوافق مع الرغبة في المشاركة في اللقاء التأسيسي ومراجعة التصميم</span></label>
+            <label class="option-label"><input type="radio" name="التأييد_المجتمعي" value="لدي مقترحات إضافية"> <span>لدي مقترحات إضافية لتطوير المشروع (تُذكر بالأسفل)</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">6. كيف ترغب في المساهمة بالموارد المجانية أو العينية البسيطة؟ (اختر كل ما يناسبك)</label>
+            <label class="option-label"><input type="checkbox" name="المساهمة_العينية" value="بذور أو شتلات (تبلدي، نبق البحر، مورينجا، زيتون، تين، رمان)" checked> <span>توفير بذور أو شتلات منزلية (تبلدي Baobab، نبق البحر Sea Buckthorn، مورينجا، زيتون، تين، رمان، خروب، سدر)</span></label>
+            <label class="option-label"><input type="checkbox" name="المساهمة_العينية" value="فرز بقايا الخضروات والفاكهة للكومبوست الحراري"> <span>فرز وتخصيص بقايا الخضروات والفاكهة وأوراق الشجر لإنتاج الكومبوست الحراري الخالي من الروائح</span></label>
+            <label class="option-label"><input type="checkbox" name="المساهمة_العينية" value="توصيل مياه التكييف أو أواني الفخار المسامي Ollas"> <span>توصيل خرطوم مياه تكييف الهواء (AC Condensate) أو المساهمة بأواني فخارية مسامية (Ollas) للري تحت السطحي</span></label>
+            <label class="option-label"><input type="checkbox" name="المساهمة_العينية" value="أدوات زراعة أو أخشاب تقليم لمصاطب Hugelkultur"> <span>المساهمة بأدوات زراعة يدوية بسيطة أو أخشاب تقليم أشجار لعمل مصاطب الاحتفاظ بالماء (Hugelkultur)</span></label>
+            <label class="option-label"><input type="checkbox" name="المساهمة_العينية" value="المشاركة بالجهد البدني والزراعة فقط"> <span>المشاركة بالجهد البدني والزراعة فقط بدون أي مساهمة عينية</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">7. اللجان التنظيمية التطوعية التي تود الانضمام إليها</label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة التواصل مع جهاز 6 أكتوبر ووزارة البيئة"> <span>لجنة التواصل الرسمي مع جهاز مدينة 6 أكتوبر ووزارة البيئة (مبادرة 100 مليون شجرة)</span></label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة الزراعة واستنبات بذور التبلدي ونبق البحر" checked> <span>لجنة الزراعة والعناية بالأشجار واستنبات بذور التبلدي (Baobab) ونبق البحر (Sea Buckthorn) والمورينجا</span></label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة الهندسة المائية وخنادق الكنتور والفخار المسامي"> <span>لجنة الهندسة المائية (خنادق الكنتور Swales، الفخار المسامي Ollas، وتجميع مياه الأمطار والتكييفات)</span></label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة التسميد العضوي والبيوتشار"> <span>لجنة التسميد العضوي والبيوتشار (بالتعاون مع محلات الخضروات وسنتر المأمون)</span></label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة التعليم البيئي للأطفال والحضانات"> <span>لجنة التعليم البيئي للأطفال والمدارس (بالتعاون مع الحضانات وأكاديمية زهرة)</span></label>
+            <label class="option-label"><input type="checkbox" name="اللجنة_التطوعية" value="لجنة التوزيع العادل للمحصول المجاني"> <span>لجنة التوزيع العادل للمحصول المجاني على الأهالي وجمعية جنى الجنتين الخيرية</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">8. الوقت المتاح للمشاركة التطوعية أسبوعياً <span class="req">*</span></label>
+            <label class="option-label"><input type="radio" name="الوقت_المتاح" value="1-2 ساعة يوم الجمعة أو السبت" required checked> <span>ساعة إلى ساعتين يوم الجمعة أو السبت صباحاً</span></label>
+            <label class="option-label"><input type="radio" name="الوقت_المتاح" value="2-4 ساعات أسبوعياً"> <span>ساعتان إلى 4 ساعات أسبوعياً</span></label>
+            <label class="option-label"><input type="radio" name="الوقت_المتاح" value="متابعة يومية سريعة 15 دقيقة"> <span>المتابعة اليومية السريعة أثناء المرور بجوار الموقع (15 دقيقة يومياً)</span></label>
+            <label class="option-label"><input type="radio" name="الوقت_المتاح" value="دعم استشاري أو إعلامي عن بعد"> <span>الدعم الاستشاري / الإداري / الإعلامي عن بُعد</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">9. الأشجار والنباتات المفضلة التي تتمنى رؤيتها وحصاد ثمارها مجاناً في الغابة</label>
+            <label class="option-label"><input type="checkbox" name="الأشجار_المفضلة" value="الزيتون والتين البرشومي والرمان" checked> <span>الزيتون، التين البرشومي، والرمان</span></label>
+            <label class="option-label"><input type="checkbox" name="الأشجار_المفضلة" value="التبلدي Baobab ونبق البحر Sea Buckthorn والمورينجا" checked> <span>شجرة التبلدي (Baobab) ونبق البحر (Sea Buckthorn) والمورينجا أوليفيرا (أغذية خارقة وتخصيب ذاتي للتربة)</span></label>
+            <label class="option-label"><input type="checkbox" name="الأشجار_المفضلة" value="النخيل والخروب والسدر والتوت"> <span>نخيل البلح، الخروب، السدر (النبق)، والتوت البلدي والعماني</span></label>
+            <label class="option-label"><input type="checkbox" name="الأشجار_المفضلة" value="الجوافة والتين الشوكي والعنب والباشون فروت"> <span>الجوافة، التين الشوكي، العنب، والباشون فروت</span></label>
+            <label class="option-label"><input type="checkbox" name="الأشجار_المفضلة" value="النباتات الطبية والعطرية (روزماري، لافندر، زعتر، نعناع)"> <span>النباتات الطبية والعطرية (الروزماري، اللافندر، الزعتر، النعناع، المريمية)</span></label>
+        </div>
+
+        <div class="card">
+            <label class="q-title">10. مقترحاتكم الإضافية أو رسالتكم لجهاز تنمية مدينة 6 أكتوبر ووزارة البيئة</label>
+            <textarea name="مقترحات_إضافية" rows="3" placeholder="اكتب أي مقترح أو ملاحظة هنا..."></textarea>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <button type="submit" class="btn-submit" id="submitBtn">إرسال استمارة المشاركة وتأكيد التأييد ✓</button>
+            <span style="font-size:0.85rem; color:#5F6368;">نموذج المشاركة المجتمعية المجاني — مدينة 6 أكتوبر</span>
+        </div>
+    </form>
+
+    <div class="success-box" id="successBox">
+        <h2 style="color:#1B4332; margin-top:0;">🎉 شكراً جزيلاً لمشاركتكم الإيجابية وتأييدكم للمبادرة!</h2>
+        <p>تم تسجيل بياناتكم بنجاح في سجل اللجنة التأسيسية التطوعية لغابة طعام مدينة 6 أكتوبر (شمال سنتر المأمون).</p>
+        <p id="summaryText" style="font-size:0.9rem; background:#FFF; padding:12px; border-radius:8px; text-align:right;"></p>
+        <div class="downloads-bar" style="justify-content:center; margin-top:14px;">
+            <button class="btn-secondary" onclick="downloadReceipt()">📥 حفظ نسخة من تسجيلك (JSON/CSV)</button>
+            <a class="btn-secondary" href="0_Complete_Combined_Portfolio_AR.pdf" target="_blank">📘 استعراض دراسة الجدوى الكاملة (PDF)</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        مبادرة غابة الطعام المجتمعية ومياواكي — مدينة 6 أكتوبر (شمال سنتر المأمون | 29.9535736°N, 30.9217508°E)
+    </div>
+</div>
+
+<script>
+let lastSubmission = {};
+document.getElementById('permacultureForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'جاري تسجيل المشاركة...';
+
+    const formData = new FormData(this);
+    const payload = {};
+    formData.forEach((value, key) => {
+        if (payload[key]) {
+            payload[key] = Array.isArray(payload[key]) ? [...payload[key], value] : [payload[key], value];
+        } else {
+            payload[key] = value;
+        }
+    });
+    payload['timestamp'] = new Date().toISOString();
+    lastSubmission = payload;
+
+    // Save in localStorage as backup
+    const saved = JSON.parse(localStorage.getItem('october6_submissions') || '[]');
+    saved.push(payload);
+    localStorage.setItem('october6_submissions', JSON.stringify(saved));
+
+    try {
+        await fetch('https://formsubmit.co/ajax/aakwaqf@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+    } catch (err) {
+        console.log('Saved locally:', err);
+    }
+
+    this.style.display = 'none';
+    const sb = document.getElementById('successBox');
+    sb.style.display = 'block';
+    document.getElementById('summaryText').innerHTML =
+        '<strong>الاسم المسجل:</strong> ' + (payload['الاسم_الثلاثي'] || '') + '<br>' +
+        '<strong>العنوان:</strong> ' + (payload['العنوان_ورقم_العمارة'] || '') + '<br>' +
+        '<strong>قرار التأييد:</strong> ' + (payload['التأييد_المجتمعي'] || '');
+});
+
+function downloadReceipt() {
+    const blob = new Blob([JSON.stringify(lastSubmission, null, 2)], {type: 'application/json;charset=utf-8'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'october6_food_forest_participation.json';
+    a.click();
+}
+</script>
+</body>
+</html>
